@@ -13,11 +13,15 @@ export COMPARTMENTID=`oci iam compartment list \
 --compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
 --compartment-id-in-subtree true | jq -r .data[].id`
 
-echo "Workshop COMPARTMENTID=>$COMPARTMENTID" > cleanup.txt
+DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+echo "$DATE:Workshop COMPARTMENTID=>$COMPARTMENTID" > cleanup.txt
 
 echo "get the NameSpace"
+
 export NAMESPACE=`oci os ns get | jq -r .data`
-echo "Workshop NAMESPACE=>$NAMESPACE" >> cleanup.txt
+
+DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+echo "$DATE:Workshop NAMESPACE=>$NAMESPACE" >> cleanup.txt
 
 echo "get the entites of the compartment"
 rm -rf entity_ids.txt
@@ -25,7 +29,9 @@ oci log-analytics entity list \
  --namespace-name $NAMESPACE \
 --compartment-id $COMPARTMENTID \
 | jq  '.data.items[] | "\(."are-logs-collected") \(."entity-type-internal-name") \(."entity-type-name") \(."name")   \(.id)"' | sed 's/"//g' | awk '{print $NF}' > entity_ids.txt
-echo "Below are the loaded entities fo the workshop" >> cleanup.txt
+
+DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+echo "$DATE:Below are the loaded entities fo the workshop" >> cleanup.txt
 cat entity_ids.txt >> cleanup.txt
 
 ### delete the entities
@@ -45,12 +51,16 @@ done < "$input"
 cat delete_entities.sh
 chmod u+x delete_entities.sh 
 ./delete_entities.sh
-echo "removal of the entities is done" >> cleanup.txt
+
+DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+echo "$DATE:removal of the entities is done" >> cleanup.txt
 
 echo "get the upload list of the compartment"
 export Upload_ref=`oci log-analytics upload list \
  --namespace-name $NAMESPACE | jq -r .data.items[].reference`
-echo "Upload_ref=>^$Upload_ref" >> cleanup.txt
+ 
+DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+echo "$DATE:Upload_ref=>$Upload_ref" >> cleanup.txt
  
 oci log-analytics upload delete \
  --namespace-name $NAMESPACE \
@@ -62,7 +72,9 @@ export LOGGROUPID=`oci log-analytics log-group list \
 --compartment-id $COMPARTMENTID   \
 --display-name "LogGroup_Student"   \
 --namespace-name $NAMESPACE | jq -r .data.items[].id` 
-echo $LOGGROUPID >> >> cleanup.txt
+
+DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+echo "DATE: LogGroup list=>$LOGGROUPID" >>   cleanup.txt
 
  oci log-analytics log-group delete \
  --namespace-name $NAMESPACE       \
@@ -74,4 +86,7 @@ echo $LOGGROUPID >> >> cleanup.txt
 #--namespace-name $NAMESPACE
 
 rm -rf entity_ids.txt delete_entities.sh
+
+DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+echo "DATE: End of cleanup " >>   cleanup.txt
 
