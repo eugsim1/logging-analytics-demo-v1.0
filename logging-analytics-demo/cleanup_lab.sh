@@ -35,30 +35,29 @@ DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE:Below are the loaded entities fo the workshop" >> cleanup.txt
 cat entity_ids.txt >> cleanup.txt
 
-if [ ! -s entity_ids.txt ]
-then
-     echo "No entities"
-else
-    echo "entities file created"	 
-fi
+	if [ ! -s entity_ids.txt ]
+	then
+		 echo "No entities"
+	else
+		### delete the entities
+		echo "delete the entities of the compartment"
+		input="entity_ids.txt"
+		rm -rf delete_entities.sh
+		while IFS= read -r line
+		do
+		 cat <<< EOT >> delete_entities.sh
+		 	 oci log-analytics entity delete \
+		     --entity-id $line \
+		     --namespace-name $NAMESPACE \
+		     --force
+		 EOT
+		done < "$input"
+		cat delete_entities.sh
+		chmod u+x delete_entities.sh 
+		./delete_entities.sh	 
+	fi
 
-### delete the entities
-echo "delete the entities of the compartment"
-input="entity_ids.txt"
-rm -rf delete_entities.sh
-while IFS= read -r line
-do
-cat << EOF >> delete_entities.sh
-echo "***********" $line "**************"
-oci log-analytics entity delete \
---entity-id $line \
---namespace-name $NAMESPACE \
---force
-EOF
-done < "$input"
-cat delete_entities.sh
-chmod u+x delete_entities.sh 
-./delete_entities.sh
+
 
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE:removal of the entities is done" >> cleanup.txt
