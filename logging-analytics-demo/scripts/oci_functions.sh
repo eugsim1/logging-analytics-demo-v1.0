@@ -15,13 +15,15 @@ setup_compartment()
 --compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
 --compartment-id-in-subtree true | jq -r .data[].id)
 
+
+ 
   if [ -z $compartmentcheck_out ]
   then
      echo "Compartment $WorkshopUser Does not exist yet, create compartment"
      compartment_out=$(oci iam compartment create --compartment-id $COMPARTMENTID \
                         --name "$WorkshopUser" \
-						--defined-tags {ResourceAllocation:Logging-Analytics } \
-                        --description "Compartment for Logging Analytics demo resources")
+						--defined-tags file://defined_tags.json
+						--description "Compartment for Logging Analytics demo resources")
      WorkshopUser_COMPARTMENTID=$(getocid "$compartment_out")
   else
      echo "Compartment  $WorkshopUser Already exists"
