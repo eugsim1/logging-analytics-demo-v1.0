@@ -35,6 +35,11 @@ DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE:Below are the loaded entities fo the workshop" >> cleanup.txt
 cat entity_ids.txt >> cleanup.txt
 
+if [ ! -f entity_ids.txt ]
+then
+     echo "No entities"
+fi
+
 ### delete the entities
 echo "delete the entities of the compartment"
 input="entity_ids.txt"
@@ -77,10 +82,10 @@ export LOGGROUPID=`oci log-analytics log-group list \
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE: LogGroup list=>$LOGGROUPID" >>   cleanup.txt
 
- oci log-analytics log-group delete \
- --namespace-name $NAMESPACE       \
- --force  \
- --log-group-id $LOGGROUPID
+oci log-analytics log-group delete \
+--namespace-name $NAMESPACE       \
+--force  \
+--log-group-id $LOGGROUPID
 
 ### offboard analytics
 # oci log-analytics namespace offboard \
