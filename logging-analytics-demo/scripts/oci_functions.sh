@@ -5,9 +5,11 @@ setup_compartment()
   name=$1
   echo "Checking to see if compartment $name already exists"
   compartmentcheck_out=$(oci iam compartment list \
-                          --lifecycle-state ACTIVE \
-						  --name $COMPARTMENT_NAME \
-                          | jq -r '.data[] | select (.name=="'"$name"'") | .id')
+--access-level ACCESSIBLE \
+--name $COMPARTMENT_NAME \
+--lifecycle-state ACTIVE \
+--compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
+--compartment-id-in-subtree true | jq -r .data[].id)
 
   if [ -z $compartmentcheck_out ]
   then
