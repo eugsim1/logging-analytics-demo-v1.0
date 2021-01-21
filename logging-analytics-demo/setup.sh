@@ -21,7 +21,7 @@ echo "Running demo setup script: $month-$day-$year" | tee setup.properties
 cp setup.properties installation_steps.txt
 cat<<EOF>defined_tags.json
 {
-"ResourceAllocation":"Logging-Analytics"
+"Oracle-Tags.ResourceAllocation":"Logging-Analytics"
 }
 EOF
 
