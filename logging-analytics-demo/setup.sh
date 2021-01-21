@@ -31,12 +31,12 @@ setup_compartment $COMPARTMENT_NAME
 setup_iam_group $GROUP_NAME
 setup_policies $POLICY_NAME
 
-echo  "NAME=>$NAME" | tee installation_steps.txt
-echo "COMPARTMENT_NAME=>$COMPARTMENT_NAME" | tee installation_steps.txt
-echo "GROUP_NAME=> $GROUP_NAME" | tee installation_steps.txt
-echo "POLICY_NAME=>$POLICY_NAME" | tee installation_steps.txt
-echo "LOGGROUP_NAME=>$LOGGROUP_NAME"  | tee installation_steps.txt
-echo "UPLOAD_NAME=>$UPLOAD_NAME" | tee installation_steps.txt
+echo  "NAME=>$NAME" >>installation_steps.txt
+echo "COMPARTMENT_NAME=>$COMPARTMENT_NAME"  >> installation_steps.txt
+echo "GROUP_NAME=> $GROUP_NAME"  >> installation_steps.txt
+echo "POLICY_NAME=>$POLICY_NAME"  >> installation_steps.txt
+echo "LOGGROUP_NAME=>$LOGGROUP_NAME"   >> installation_steps.txt
+echo "UPLOAD_NAME=>$UPLOAD_NAME"  >> installation_steps.txt
 
 
 onboard
