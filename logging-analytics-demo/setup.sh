@@ -4,7 +4,7 @@
 
 ## NOTES modified by Eugene Simos
 #
-# 1. Must be run in your home region. 
+# 1. Must be run in your home region.
 #
 #
 ##
@@ -19,18 +19,26 @@ year=$(date +%Y)
 
 echo "Running demo setup script: $month-$day-$year" | tee setup.properties
 cp setup.properties installation_steps.txt
-
-export WorkshopUser=$1
-
-  if [ -z $WorkshopUser ]
-    then
-      echo "Add your userId to the setup.sh script as ./setup.sh analytics00X"
-      exit 0
-  fi
-
+cat<<EOF>defined_tags.json
+{
+"ResourceAllocation":"Logging-Analytics"
+}
+EOF
 
 export NAME="LoggingAnalytics" ### root compartment for the labs
 export COMPARTMENT_NAME=$NAME
+export GROUP_NAME="Logging-Analytics-SuperAdmins"
+export POLICY_NAME="LoggingAnalytics"
+export LOGGROUP_NAME="$NAME-LogGroup-$WorkshopUser"
+export UPLOAD_NAME=$NAME
+
+export WorkshopUser=$1
+
+if [ -z $WorkshopUser ]
+then
+echo "Add your userId to the setup.sh script as ./setup.sh analytics00X"
+exit 0
+fi
 
 
 echo "get the compartment id for the compartment $NAME"
@@ -42,10 +50,7 @@ export COMPARTMENTID=`oci iam compartment list \
 --compartment-id-in-subtree true | jq -r .data[].id`
 
 
-export GROUP_NAME="Logging-Analytics-SuperAdmins"
-export POLICY_NAME="LoggingAnalytics"
-export LOGGROUP_NAME="$NAME-LogGroup-$WorkshopUser"
-export UPLOAD_NAME=$NAME
+
 
 setup_compartment $COMPARTMENT_NAME $WorkshopUser $COMPARTMENTID
 setup_iam_group $GROUP_NAME
@@ -57,6 +62,7 @@ echo "GROUP_NAME=> $GROUP_NAME"  >> installation_steps.txt
 echo "POLICY_NAME=>$POLICY_NAME"  >> installation_steps.txt
 echo "LOGGROUP_NAME=>$LOGGROUP_NAME"   >> installation_steps.txt
 echo "UPLOAD_NAME=>$UPLOAD_NAME"  >> installation_steps.txt
+
 
 
 onboard
