@@ -66,7 +66,7 @@ echo "get the upload list of the compartment"
 export Upload_ref=`oci log-analytics upload list \
  --namespace-name $NAMESPACE | jq -r .data.items[].reference`
  
- 	if [ -z Upload_ref ]
+ 	if [ -z $Upload_ref ]
 	then
 		 echo "No upload list"
 	else
