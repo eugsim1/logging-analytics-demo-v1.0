@@ -25,7 +25,7 @@ export WorkshopUser=$1
   if [ -z $WorkshopUser ]
     then
       echo "Add yout userId to the setup.sh script as ./setup.sh analytics00X"
-      return 0
+      exit 0
   fi
 
 
