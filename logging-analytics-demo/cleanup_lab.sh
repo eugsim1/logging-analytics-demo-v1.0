@@ -66,13 +66,20 @@ echo "get the upload list of the compartment"
 export Upload_ref=`oci log-analytics upload list \
  --namespace-name $NAMESPACE | jq -r .data.items[].reference`
  
-DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
-echo "$DATE:Upload_ref=>$Upload_ref" >> cleanup.txt
+ 	if [ -z Upload_ref ]
+	then
+		 echo "No upload list"
+	else
+		DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+		echo "$DATE:Upload_ref=>$Upload_ref" >> cleanup.txt
+		 
+		oci log-analytics upload delete \
+		--namespace-name $NAMESPACE \
+		--upload-reference $Upload_ref \
+		--force	
+	fi
  
-oci log-analytics upload delete \
---namespace-name $NAMESPACE \
---upload-reference $Upload_ref \
---force
+
 
 echo "get the log-group list"
 export LOGGROUPID=`oci log-analytics log-group list \
