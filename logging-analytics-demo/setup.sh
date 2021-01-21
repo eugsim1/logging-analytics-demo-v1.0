@@ -17,6 +17,7 @@ month=$(date +%b)
 year=$(date +%Y)
 
 echo "Running demo setup script: $month-$day-$year" | tee setup.properties
+cp setup.properties installation_steps.txt
 
 NAME="logging-analytics-demo"
 COMPARTMENT_NAME=$NAME
@@ -29,6 +30,14 @@ UPLOAD_NAME=$NAME
 setup_compartment $COMPARTMENT_NAME
 setup_iam_group $GROUP_NAME
 setup_policies $POLICY_NAME
+
+echo  "NAME=>$NAME" | tee installation_steps.txt
+echo "COMPARTMENT_NAME=>$COMPARTMENT_NAME" | tee installation_steps.txt
+echo "GROUP_NAME=> $GROUP_NAME" | tee installation_steps.txt
+echo "POLICY_NAME=>$POLICY_NAME" | tee installation_steps.txt
+echo "LOGGROUP_NAME=>$LOGGROUP_NAME"  | tee installation_steps.txt
+echo "UPLOAD_NAME=>$UPLOAD_NAME" | tee installation_steps.txt
+
 
 onboard
 setup_loggroupid $LOGGROUP_NAME
