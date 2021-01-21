@@ -1,0 +1,205 @@
+Nov 16 2020 00:35:25 dbhost1 seahorse-daemon[7304]: DNS-SD initialization failed: Daemon not running
+Nov 16 2020 00:35:25 dbhost1 seahorse-daemon[7304]: init gpgme version 1.1.8
+Nov 16 2020 00:35:27 dbhost1 pulseaudio[7476]: pid.c: Daemon already running.
+Nov 16 2020 00:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 00:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 00:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 00:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 00:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 00:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 00:52:55 dbhost1 NetworkManager[9296]: <info> (eth0): deactivating device (reason: 39).
+Nov 16 2020 00:52:55 dbhost1 NetworkManager[9296]: <info> (eth0): device state change: 8 -> 3 (reason 39)
+Nov 16 2020 00:52:56 dbhost1 ntpd[9607]: 10.240.64.1 interface 10.208.188.15 -> (none)
+Nov 16 2020 00:52:56 dbhost1 ntpd[9607]: 130.35.136.1 interface 10.208.188.15 -> (none)
+Nov 16 2020 00:52:56 dbhost1 ntpd[9607]: Deleting interface #3 eth0, 10.208.188.15#123, interface stats: received=507, sent=1675, dropped=0, active_time=458243 secs
+Nov 16 2020 00:52:56 dbhost1 ntpd[9607]: peers refreshed
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> (eth0): device state change: 3 -> 4 (reason 0)
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> (eth0): device state change: 4 -> 5 (reason 0)
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> (eth0): device state change: 5 -> 7 (reason 0)
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) complete.
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) scheduled...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 4 of 5 (IP4 Configure Get) started...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) scheduled...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) started...
+Nov 16 2020 00:52:58 dbhost1 NetworkManager[9296]: <info> Activation (eth0) starting connection 'System eth0'
+Nov 16 2020 00:52:58 dbhost1 gnome-keyring-daemon[7301]: dbus failure unregistering from session: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+Nov 16 2020 00:52:59 dbhost1 NetworkManager[9296]: <info> (eth0): device state change: 7 -> 8 (reason 0)
+Nov 16 2020 00:52:59 dbhost1 NetworkManager[9296]: <info> Activation (eth0) Stage 5 of 5 (IP Configure Commit) complete.
+Nov 16 2020 00:52:59 dbhost1 NetworkManager[9296]: <info> Activation (eth0) successful, device activated.
+Nov 16 2020 00:52:59 dbhost1 NetworkManager[9296]: <info> Policy set 'System eth0' (eth0) as default for IPv4 routing and DNS.
+Nov 16 2020 00:52:59 dbhost1 ntpd[9607]: Listen normally on 6 eth0 10.208.188.15 UDP 123
+Nov 16 2020 00:52:59 dbhost1 ntpd[9607]: peers refreshed
+Nov 16 2020 00:53:00 dbhost1 ntpd[9607]: 0.0.0.0 0618 08 no_sys_peer
+Nov 16 2020 00:54:46 dbhost1 pulseaudio[23717]: pid.c: Stale PID file, overwriting.
+Nov 16 2020 00:54:46 dbhost1 seahorse-daemon[23689]: DNS-SD initialization failed: Daemon not running
+Nov 16 2020 00:54:46 dbhost1 seahorse-daemon[23689]: init gpgme version 1.1.8
+Nov 16 2020 00:54:47 dbhost1 pulseaudio[23745]: pid.c: Daemon already running.
+Nov 16 2020 01:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 01:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 01:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 01:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 01:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 01:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 02:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 02:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 02:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 02:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 02:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 02:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 03:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 03:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 03:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 03:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 03:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 03:37:01 dbhost1 rsyslogd: [origin software="rsyslogd" swVersion="5.8.10" x-pid="25232" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Nov 16 2020 04:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 04:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 04:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 04:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 04:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 04:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 05:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 05:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 05:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 05:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 05:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 05:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 06:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 06:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 06:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 06:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 06:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 07:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 07:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 07:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 07:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 07:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 07:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 08:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 08:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 08:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 08:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 08:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 08:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 09:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 09:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 09:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 09:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 09:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 09:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 10:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 10:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 10:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 10:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 10:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 10:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 11:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 11:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 11:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 11:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 11:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 11:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 12:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 12:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 12:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 12:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 12:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 12:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 12:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 13:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 13:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 13:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 13:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 13:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 13:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 14:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 14:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 14:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 14:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 14:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 14:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 14:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 15:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 15:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 15:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 15:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 15:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 15:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 15:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 16:56:53 dbhost1 kernel: nr_pdflush_threads exported in /proc is scheduled for removal
+Nov 16 2020 16:56:53 dbhost1 kernel: sysctl: The scan_unevictable_pages sysctl/node-interface has been disabled for lack of a legitimate use case.  If you have one, please send an email to linux-mm@kvack.org.
+Nov 16 2020 17:04:32 dbhost1 yum[17745]: Updated: tzdata-2017b-1.el6.noarch
+Nov 16 2020 17:04:40 dbhost1 yum[17745]: Updated: glibc-common-2.12-1.209.0.3.el6_9.2.x86_64
+Nov 16 2020 17:04:40 dbhost1 yum[17745]: Updated: nss-softokn-freebl-3.14.3-23.3.el6_8.x86_64
+Nov 16 2020 17:04:47 dbhost1 yum[17745]: Installed: nss-softokn-freebl-3.14.3-23.3.el6_8.i686
+Nov 16 2020 17:04:47 dbhost1 yum[17745]: Updated: glibc-2.12-1.209.0.3.el6_9.2.x86_64
+Nov 16 2020 17:04:47 dbhost1 yum[17745]: Updated: glibc-headers-2.12-1.209.0.3.el6_9.2.x86_64
+Nov 16 2020 17:04:49 dbhost1 yum[17745]: Installed: glibc-2.12-1.209.0.3.el6_9.2.i686
+Nov 16 2020 17:04:49 dbhost1 yum[17745]: Installed: glibc-devel-2.12-1.209.0.3.el6_9.2.i686
+Nov 16 2020 17:04:50 dbhost1 yum[17745]: Updated: glibc-devel-2.12-1.209.0.3.el6_9.2.x86_64
+Nov 16 2020 17:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 17:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 17:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 17:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 17:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 17:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 17:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 18:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 18:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 18:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 18:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 18:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 18:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 18:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 19:39:53 dbhost1 kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+Nov 16 2020 19:45:52 dbhost1 yum[15692]: Installed: compat-libcap1-1.10-1.i686
+Nov 16 2020 20:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 20:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 20:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 20:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 20:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 20:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 20:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 21:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 21:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 21:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 21:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 21:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 21:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 22:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 22:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 22:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 22:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 22:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 22:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 22:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 23:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 23:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 23:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 23:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 23:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
+Nov 16 2020 23:35:33 dbhost1 ntpd[9607]: frequency file /etc/ntp/drift.TEMP: Permission denied
