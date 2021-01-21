@@ -71,7 +71,7 @@ oci log-analytics upload delete \
 echo "get the log-group list"
 export LOGGROUPID=`oci log-analytics log-group list \
 --compartment-id $COMPARTMENTID   \
---display-name "LogGroup_Student"   \
+--display-name $LOGGROUP_NAME   \
 --namespace-name $NAMESPACE | jq -r .data.items[].id` 
 
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
