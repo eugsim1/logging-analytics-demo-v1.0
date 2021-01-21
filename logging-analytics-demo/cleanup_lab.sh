@@ -6,7 +6,7 @@ LOGGROUP_NAME="$NAME-LogGroup"
 
 UPLOAD_NAME=$NAME
 #### get the id of the entities
-echo "get the comprtment id"
+echo "get the compartment id"
 export COMPARTMENTID=`oci iam compartment list \
 --access-level ACCESSIBLE \
 --name $COMPARTMENT_NAME \
@@ -74,7 +74,7 @@ export LOGGROUPID=`oci log-analytics log-group list \
 --namespace-name $NAMESPACE | jq -r .data.items[].id` 
 
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
-echo "DATE: LogGroup list=>$LOGGROUPID" >>   cleanup.txt
+echo "$DATE: LogGroup list=>$LOGGROUPID" >>   cleanup.txt
 
  oci log-analytics log-group delete \
  --namespace-name $NAMESPACE       \
@@ -88,5 +88,5 @@ echo "DATE: LogGroup list=>$LOGGROUPID" >>   cleanup.txt
 rm -rf entity_ids.txt delete_entities.sh
 
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
-echo "DATE: End of cleanup " >>   cleanup.txt
+echo "$DATE: End of cleanup " >>   cleanup.txt
 
