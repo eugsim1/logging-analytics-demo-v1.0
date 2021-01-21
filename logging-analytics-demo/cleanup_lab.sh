@@ -38,6 +38,8 @@ cat entity_ids.txt >> cleanup.txt
 if [ ! -f entity_ids.txt ]
 then
      echo "No entities"
+else
+    echo "entities file created"	 
 fi
 
 ### delete the entities
