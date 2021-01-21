@@ -20,6 +20,7 @@ setup_compartment()
      echo "Compartment $WorkshopUser Does not exist yet, create compartment"
      compartment_out=$(oci iam compartment create --compartment-id $COMPARTMENTID \
                         --name "$WorkshopUser" \
+						--defined-tags {ResourceAllocation:Logging-Analytics } \
                         --description "Compartment for Logging Analytics demo resources")
      WorkshopUser_COMPARTMENTID=$(getocid "$compartment_out")
   else
