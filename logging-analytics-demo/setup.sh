@@ -19,7 +19,7 @@ year=$(date +%Y)
 echo "Running demo setup script: $month-$day-$year" | tee setup.properties
 cp setup.properties installation_steps.txt
 
-NAME="logging-analytics-demo"
+NAME="LoggingAnalytics"
 COMPARTMENT_NAME=$NAME
 GROUP_NAME="Logging-Analytics-SuperAdmins"
 POLICY_NAME="Logging-Analytics-Demo-Policy"
