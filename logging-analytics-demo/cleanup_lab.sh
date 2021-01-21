@@ -35,7 +35,7 @@ DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE:Below are the loaded entities fo the workshop" >> cleanup.txt
 cat entity_ids.txt >> cleanup.txt
 
-if [ ! -f entity_ids.txt ]
+if [ ! -s entity_ids.txt ]
 then
      echo "No entities"
 else
