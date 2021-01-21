@@ -43,6 +43,8 @@ setup_loggroupid()
 --compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
 --compartment-id-in-subtree true | jq -r .data[].id)
 
+ echo "compartmentId from setup_logggrouip => $COMPARTMENTID"
+
   echo "Checking to see if log group $name already exists"
   loggroupcheck_out=$(oci log-analytics log-group list \
                        --namespace-name $NAMESPACE \
