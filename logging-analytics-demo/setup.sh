@@ -21,8 +21,18 @@ cp setup.properties installation_steps.txt
 
 NAME="LoggingAnalytics"
 COMPARTMENT_NAME=$NAME
+
+
+echo "get the compartment id"
+export COMPARTMENTID=`oci iam compartment list \
+--access-level ACCESSIBLE \
+--name $COMPARTMENT_NAME \
+--compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
+--compartment-id-in-subtree true | jq -r .data[].id`
+
+
 GROUP_NAME="Logging-Analytics-SuperAdmins"
-POLICY_NAME="Logging-Analytics-Demo-Policy"
+POLICY_NAME="LoggingAnalytics"
 LOGGROUP_NAME="$NAME-LogGroup"
 
 UPLOAD_NAME=$NAME

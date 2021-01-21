@@ -92,7 +92,7 @@ function setup_policies()
 {
   name=$1
   echo "Checking to see if policy $name already exists"
-  policycheck_out=$(oci iam policy list --compartment-id $OCI_TENANCY \
+  policycheck_out=$(oci iam policy list --compartment-id $COMPARTMENTID \
                       | jq -r '.data[] | select (.name=="'"$name"'") | .id')
 
   if [ -z $policycheck_out ]
@@ -112,7 +112,7 @@ function setup_policies()
        ]')
     POLICYID=$(getocid "$policy_out")
   else
-    echo "  Already exists"
+    echo " Logging Analytics Policy Already exists"
     POLICYID=$policycheck_out
   fi
 
