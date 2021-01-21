@@ -1,10 +1,11 @@
-NAME="logging-analytics-demo"
-COMPARTMENT_NAME=$NAME
-GROUP_NAME="Logging-Analytics-SuperAdmins"
-POLICY_NAME="Logging-Analytics-Demo-Policy"
-LOGGROUP_NAME="$NAME-LogGroup"
+export NAME="LoggingAnalytics"
+export COMPARTMENT_NAME=$NAME
+export GROUP_NAME="Logging-Analytics-SuperAdmins"
+export POLICY_NAME="LoggingAnalytics"
+export LOGGROUP_NAME="$NAME-LogGroup"
+export UPLOAD_NAME=$NAME
 
-UPLOAD_NAME=$NAME
+
 #### get the id of the entities
 echo "get the compartment id"
 export COMPARTMENTID=`oci iam compartment list \

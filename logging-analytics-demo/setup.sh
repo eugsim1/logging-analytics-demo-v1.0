@@ -24,7 +24,7 @@ export NAME="LoggingAnalytics"
 export COMPARTMENT_NAME=$NAME
 
 
-echo "get the compartment id"
+echo "get the compartment id for the compartment $NAME"
 export COMPARTMENTID=`oci iam compartment list \
 --access-level ACCESSIBLE \
 --name $COMPARTMENT_NAME \
