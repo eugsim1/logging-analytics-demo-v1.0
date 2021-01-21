@@ -2,10 +2,10 @@ source "scripts/common.sh"
 
 function update_timestamps()
 {
-   echo "Dont Create log directories"
+   echo "from update_timestamps=>Dont Create log directories"
 #  rm -rf logs/*
 #  mkdir -p logs/{db,syslog,oci-vcn-flow,oci-api-gw,cisco-asa,F5,juniper}
-   echo "Dont change Log Record timestamps"
+   echo "from update_timestamps=>Dont change Log Record timestamps"
 #  perl scripts/time_shift.pl \
 #    -input_dir  source/  \
 #    -output_dir logs/    \
@@ -110,23 +110,23 @@ upload_pattern()
 
 upload_files()
 {
-  echo "Uploading Logs"
-  create_entity db1 omc_oracle_db_instance
+  echo "Uploading Logs for user $WorkshopUser"
+  create_entity db1-$WorkshopUser omc_oracle_db_instance
   upload_pattern 'logs/db/*' 'Database Alert Logs' $ENTITYID
   echo
 
-  create_entity dbhost1.oracle.com omc_host_linux
+  create_entity dbhost1.oracle.com-$WorkshopUser omc_host_linux
   upload_pattern 'logs/syslog/*' 'Linux Syslog Logs' $ENTITYID
   echo
 
-  create_entity bigip-ltm-dmz1.oracle.com omc_host_linux
+  create_entity bigip-ltm-dmz1.oracle.com-$WorkshopUser omc_host_linux
   upload_pattern 'logs/F5/*' 'F5 Big IP Logs' $ENTITYID
   echo
 
 # create_entity cisco-asa1.oracle.com omc_host_linux
 # upload_pattern 'logs/cisco-asa/*' 'Cisco ASA Logs' $ENTITYID
 
-  create_entity srx-test.oracle.com omc_host_linux
+  create_entity srx-test.oracle.com-$WorkshopUser omc_host_linux
   upload_pattern 'logs/juniper/*' 'Juniper SRX Syslog Logs' $ENTITYID
   echo
 
@@ -134,7 +134,7 @@ upload_files()
   upload_pattern 'logs/oci-vcn-flow/*.zip' 'OCI VCN Flow Logs'
   echo
 
-  create_entity apigw1.oracle.com oci_api_gateway
+  create_entity apigw1.oracle.com-$WorkshopUser oci_api_gateway
   upload_pattern 'logs/oci-api-gw/*access.zip' 'OCI API Gateway Access Logs'     $ENTITYID
   upload_pattern 'logs/oci-api-gw/*exec.zip'   'OCI API Gateway Execution Logs'  $ENTITYID
 }

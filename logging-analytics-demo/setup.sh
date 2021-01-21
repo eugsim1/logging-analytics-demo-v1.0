@@ -20,6 +20,15 @@ year=$(date +%Y)
 echo "Running demo setup script: $month-$day-$year" | tee setup.properties
 cp setup.properties installation_steps.txt
 
+export WorkshopUser=$1
+
+  if [ ! -z $WorkshopUser ]
+    then
+      echo "Add yout userId to the setup.sh script as ./setup.sh analytics00X"
+      return 0
+  fi
+
+
 export NAME="LoggingAnalytics"
 export COMPARTMENT_NAME=$NAME
 
@@ -51,7 +60,7 @@ echo "LOGGROUP_NAME=>$LOGGROUP_NAME"   >> installation_steps.txt
 echo "UPLOAD_NAME=>$UPLOAD_NAME"  >> installation_steps.txt
 
 
-onboard
+#onboard
 setup_loggroupid $LOGGROUP_NAME
 
 update_timestamps
