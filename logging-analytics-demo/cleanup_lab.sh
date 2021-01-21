@@ -12,11 +12,12 @@ export COMPARTMENTID=`oci iam compartment list \
 --name $COMPARTMENT_NAME \
 --compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
 --compartment-id-in-subtree true | jq -r .data[].id`
-echo "COMPARTMENTID=>$COMPARTMENTID" > cleanup.txt
+
+echo "Workshop COMPARTMENTID=>$COMPARTMENTID" > cleanup.txt
 
 echo "get the NameSpace"
 export NAMESPACE=`oci os ns get | jq -r .data`
-echo "NAMESPACE=>$NAMESPACE" >> cleanup.txt
+echo "Workshop NAMESPACE=>$NAMESPACE" >> cleanup.txt
 
 echo "get the entites of the compartment"
 rm -rf entity_ids.txt
@@ -24,6 +25,7 @@ oci log-analytics entity list \
  --namespace-name $NAMESPACE \
 --compartment-id $COMPARTMENTID \
 | jq  '.data.items[] | "\(."are-logs-collected") \(."entity-type-internal-name") \(."entity-type-name") \(."name")   \(.id)"' | sed 's/"//g' | awk '{print $NF}' > entity_ids.txt
+echo "Below are the loaded entities fo the workshop" >> cleanup.txt
 cat entity_ids.txt >> cleanup.txt
 
 ### delete the entities
@@ -43,6 +45,7 @@ done < "$input"
 cat delete_entities.sh
 chmod u+x delete_entities.sh 
 ./delete_entities.sh
+echo "removal of the entities is done" >> cleanup.txt
 
 echo "get the upload list of the compartment"
 export Upload_ref=`oci log-analytics upload list \
