@@ -46,12 +46,12 @@ cat entity_ids.txt >> cleanup.txt
 		rm -rf delete_entities.sh
 		while IFS= read -r line
 		do
-		 cat <<< EOT >> delete_entities.sh
+		 cat <<< 'EOT' >> delete_entities.sh
 		 	 oci log-analytics entity delete \
 		     --entity-id $line \
 		     --namespace-name $NAMESPACE \
 		     --force
-		 EOT
+		'EOT'
 		done < "$input"
 		cat delete_entities.sh
 		chmod u+x delete_entities.sh 
