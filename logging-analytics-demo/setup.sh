@@ -1,13 +1,14 @@
 #!/usr/bin/bash
 
-## Copyright 2020 Oracle, Inc.
+## Copyright 2021 Oracle, Inc.
 
-## NOTES
+## NOTES modified by Eugene Simos
 #
 # 1. Must be run in your home region. 
 #
 #
 ##
+#!/bin/bash
 
 source "scripts/oci_functions.sh"
 source "scripts/upload.sh"
@@ -19,8 +20,8 @@ year=$(date +%Y)
 echo "Running demo setup script: $month-$day-$year" | tee setup.properties
 cp setup.properties installation_steps.txt
 
-NAME="LoggingAnalytics"
-COMPARTMENT_NAME=$NAME
+export NAME="LoggingAnalytics"
+export COMPARTMENT_NAME=$NAME
 
 
 echo "get the compartment id"
@@ -31,11 +32,11 @@ export COMPARTMENTID=`oci iam compartment list \
 --compartment-id-in-subtree true | jq -r .data[].id`
 
 
-GROUP_NAME="Logging-Analytics-SuperAdmins"
-POLICY_NAME="LoggingAnalytics"
-LOGGROUP_NAME="$NAME-LogGroup"
+export GROUP_NAME="Logging-Analytics-SuperAdmins"
+export POLICY_NAME="LoggingAnalytics"
+export LOGGROUP_NAME="$NAME-LogGroup"
 
-UPLOAD_NAME=$NAME
+export UPLOAD_NAME=$NAME
 
 setup_compartment $COMPARTMENT_NAME
 setup_iam_group $GROUP_NAME
