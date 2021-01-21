@@ -48,9 +48,9 @@ export LOGGROUP_NAME="$NAME-LogGroup"
 
 export UPLOAD_NAME=$NAME
 
-##setup_compartment $COMPARTMENT_NAME
-##setup_iam_group $GROUP_NAME
-##setup_policies $POLICY_NAME
+setup_compartment $COMPARTMENT_NAME
+setup_iam_group $GROUP_NAME
+setup_policies $POLICY_NAME
 
 echo "NAME=>$NAME" >>installation_steps.txt
 echo "COMPARTMENT_NAME=>$COMPARTMENT_NAME"  >> installation_steps.txt
@@ -60,7 +60,7 @@ echo "LOGGROUP_NAME=>$LOGGROUP_NAME"   >> installation_steps.txt
 echo "UPLOAD_NAME=>$UPLOAD_NAME"  >> installation_steps.txt
 
 
-#onboard
+onboard
 setup_loggroupid $LOGGROUP_NAME
 
 update_timestamps
