@@ -31,10 +31,11 @@ export NAME="LoggingAnalytics" ### root compartment for the labs
 export COMPARTMENT_NAME=$NAME
 export GROUP_NAME="Logging-Analytics-SuperAdmins"
 export POLICY_NAME="LoggingAnalytics"
-export LOGGROUP_NAME="$NAME-LogGroup-$WorkshopUser"
+
 export UPLOAD_NAME=$NAME
 
 export WorkshopUser=$1
+export LOGGROUP_NAME="$NAME-LogGroup-$WorkshopUser"
 
 if [ -z $WorkshopUser ]
 then
