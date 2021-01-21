@@ -26,8 +26,9 @@ echo "$DATE:Workshop NAMESPACE=>$NAMESPACE" >> cleanup.txt
 echo "get the entites of the compartment"
 rm -rf entity_ids.txt
 oci log-analytics entity list \
- --namespace-name $NAMESPACE \
+--namespace-name $NAMESPACE \
 --compartment-id $COMPARTMENTID \
+--lifecycle-state ACTIVE \
 | jq  '.data.items[] | "\(."are-logs-collected") \(."entity-type-internal-name") \(."entity-type-name") \(."name")   \(.id)"' | sed 's/"//g' | awk '{print $NF}' > entity_ids.txt
 
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
@@ -63,7 +64,7 @@ DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE:Upload_ref=>$Upload_ref" >> cleanup.txt
  
 oci log-analytics upload delete \
- --namespace-name $NAMESPACE \
+--namespace-name $NAMESPACE \
 --upload-reference $Upload_ref \
 --force
 
