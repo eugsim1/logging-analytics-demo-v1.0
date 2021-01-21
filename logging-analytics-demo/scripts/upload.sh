@@ -2,10 +2,10 @@ source "scripts/common.sh"
 
 function update_timestamps()
 {
-#  echo "Create log directories"
+   echo "Dont Create log directories"
 #  rm -rf logs/*
 #  mkdir -p logs/{db,syslog,oci-vcn-flow,oci-api-gw,cisco-asa,F5,juniper}
-#  echo "Update Log Record timestamps"
+   echo "Dont change Log Record timestamps"
 #  perl scripts/time_shift.pl \
 #    -input_dir  source/  \
 #    -output_dir logs/    \
