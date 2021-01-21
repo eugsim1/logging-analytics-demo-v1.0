@@ -90,10 +90,27 @@ export LOGGROUPID=`oci log-analytics log-group list \
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE: LogGroup list=>$LOGGROUPID" >>   cleanup.txt
 
-oci log-analytics log-group delete \
---namespace-name $NAMESPACE       \
---force  \
---log-group-id $LOGGROUPID
+  if [ -z $LOGGROUPID ]
+  then
+     echo "log-group list is empty"
+  else
+	#### need ETAG to move on otherwise the delete doesnt work !
+	###
+	export ETAG=`oci log-analytics log-group get \
+	--namespace-name $NAMESPACE \
+	--log-group-id $LOGGROUPID | jq -r .etag` 
+
+			 
+	oci log-analytics log-group delete \
+	--namespace-name $NAMESPACE       \
+	--log-group-id $LOGGROUPID --if-match $ETAG \
+	--force 
+	
+	DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
+	echo "$DATE: LogGroup list deteted=>$LOGGROUPID" >>   cleanup.txt
+  fi	
+		
+
 
 ### offboard analytics
 # oci log-analytics namespace offboard \
