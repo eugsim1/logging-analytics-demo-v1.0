@@ -111,6 +111,7 @@ upload_pattern()
 upload_files()
 {
   echo "Uploading Logs for user $WorkshopUser"
+  sleep 10
   create_entity db1-$WorkshopUser omc_oracle_db_instance
   upload_pattern 'logs/db/*' 'Database Alert Logs' $ENTITYID
   echo

@@ -24,7 +24,7 @@ export WorkshopUser=$1
 
   if [ -z $WorkshopUser ]
     then
-      echo "Add yout userId to the setup.sh script as ./setup.sh analytics00X"
+      echo "Add your userId to the setup.sh script as ./setup.sh analytics00X"
       exit 0
   fi
 
@@ -52,7 +52,7 @@ export UPLOAD_NAME=$NAME
 ##setup_iam_group $GROUP_NAME
 ##setup_policies $POLICY_NAME
 
-echo  "NAME=>$NAME" >>installation_steps.txt
+echo "NAME=>$NAME" >>installation_steps.txt
 echo "COMPARTMENT_NAME=>$COMPARTMENT_NAME"  >> installation_steps.txt
 echo "GROUP_NAME=> $GROUP_NAME"  >> installation_steps.txt
 echo "POLICY_NAME=>$POLICY_NAME"  >> installation_steps.txt
