@@ -36,12 +36,12 @@ setup_loggroupid()
 {
   name=$1
   
-  COMPARTMENTID=`oci iam compartment list \
+  COMPARTMENTID=$(oci iam compartment list \
 --access-level ACCESSIBLE \
 --name $COMPARTMENT_NAME \
 --lifecycle-state ACTIVE \
 --compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
---compartment-id-in-subtree true | jq -r .data[].id`
+--compartment-id-in-subtree true | jq -r .data[].id)
 
   echo "Checking to see if log group $name already exists"
   loggroupcheck_out=$(oci log-analytics log-group list \
