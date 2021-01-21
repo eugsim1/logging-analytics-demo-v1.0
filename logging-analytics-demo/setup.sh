@@ -28,6 +28,7 @@ echo "get the compartment id"
 export COMPARTMENTID=`oci iam compartment list \
 --access-level ACCESSIBLE \
 --name $COMPARTMENT_NAME \
+--lifecycle-state ACTIVE \
 --compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
 --compartment-id-in-subtree true | jq -r .data[].id`
 
