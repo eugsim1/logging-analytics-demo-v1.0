@@ -2,14 +2,14 @@ source "scripts/common.sh"
 
 function update_timestamps()
 {
-  echo "Create log directories"
-  rm -rf logs/*
-  mkdir -p logs/{db,syslog,oci-vcn-flow,oci-api-gw,cisco-asa,F5,juniper}
-  echo "Update Log Record timestamps"
-  perl scripts/time_shift.pl \
-    -input_dir  source/  \
-    -output_dir logs/    \
-    -shift_to today 
+#  echo "Create log directories"
+#  rm -rf logs/*
+#  mkdir -p logs/{db,syslog,oci-vcn-flow,oci-api-gw,cisco-asa,F5,juniper}
+#  echo "Update Log Record timestamps"
+#  perl scripts/time_shift.pl \
+#    -input_dir  source/  \
+#    -output_dir logs/    \
+#    -shift_to today 
 }
 
 zip_files()

@@ -1,0 +1,1305 @@
+Nov 16 2020 00:15:35 srx-test mgd[5173]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Event processing process', pid 1016, signal 1, status 0 with notification errors enabled
+Nov 16 2020 00:15:35 srx-test mgd[5173]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 00:15:36 srx-test mgd[5173]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Nov 16 2020 00:15:36 srx-test mgd[5173]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 00:15:36 srx-test mgd[5173]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 00:16:00 srx-test cron[1089]: (*system*) RELOAD (/etc/crontab)
+Nov 16 2020 00:16:21 srx-test srx-test L2ALM: trying master connection, status 61, attempt 5000 
+Nov 16 2020 00:20:01 srx-test cron[5464]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 00:20:54 srx-test checklogin[5469]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 00:20:54 srx-test checklogin[5469]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 00:20:55 srx-test mgd[5473]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 00:20:55 srx-test mgd[5473]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 00:20:55 srx-test mgd[5473]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [5473], ssh-connection '', client-mode 'cli'
+Nov 16 2020 00:20:55 srx-test mgd[5473]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 00:20:57 srx-test file[5472]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 00:20:57 srx-test file[5472]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 00:20:57 srx-test file[5472]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [5472], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 00:20:57 srx-test file[5472]: auto-snapshot is not configured
+Nov 16 2020 00:20:58 srx-test file[5472]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 00:21:00 srx-test checklogin[5477]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 00:21:00 srx-test checklogin[5477]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 00:21:00 srx-test checklogin[5479]: WEB_AUTH_SUCCESS: Authenticated httpd client (username marybaker)
+Nov 16 2020 00:21:00 srx-test checklogin[5479]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 00:21:00 srx-test mgd[5474]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 00:21:01 srx-test mgd[5474]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 00:21:10 srx-test mgd[5474]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 00:21:22 srx-test mgd[5488]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc command show version '
+Nov 16 2020 00:21:22 srx-test mgd[5488]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-information'
+Nov 16 2020 00:21:22 srx-test mgd[5488]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5488], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 00:21:27 srx-test mgd[5490]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 00:21:28 srx-test mgd[5490]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 00:21:28 srx-test mgd[5490]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 5493, status 0
+Nov 16 2020 00:21:28 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 00:21:28 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed"'
+Nov 16 2020 00:21:28 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-interface-information level-extra=terse'
+Nov 16 2020 00:21:29 srx-test mgd[5490]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 5494, status 0
+Nov 16 2020 00:21:29 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed" groups="groups"'
+Nov 16 2020 00:21:29 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 00:21:33 srx-test last message repeated 3 times
+Nov 16 2020 00:21:33 srx-test mgd[5490]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 00:22:10 srx-test mgd[5495]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 00:22:10 srx-test mgd[5495]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 00:22:10 srx-test mgd[5495]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 00:22:14 srx-test mgd[5500]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 00:22:14 srx-test mgd[5500]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-interface-information'
+Nov 16 2020 00:22:15 srx-test mgd[5500]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 5502, status 0
+Nov 16 2020 00:22:16 srx-test mgd[5500]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 00:22:16 srx-test mgd[5500]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-vlan-information verbosity_level=detail'
+Nov 16 2020 00:22:20 srx-test mgd[5500]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-node-information path=/chassis/aggregated-devices/ethernet/device-count edit-path=chassis aggregated-devices ethernet device-count'
+Nov 16 2020 00:22:20 srx-test mgd[5500]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 5505, status 0
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc get-interface-information terse get-interface-information rpc rpc command show chassis cluster status '
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-interface-information level-extra=terse'
+Nov 16 2020 00:22:22 srx-test mgd[5503]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5503], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 00:22:23 srx-test mgd[5503]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-fpc-information detail'
+Nov 16 2020 00:22:23 srx-test mgd[5503]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc get-configuration configuration ethernet-switching-options configuration get-configuration rpc rpc get-configuration configuration logical-systems configuration get-configuration rpc rpc command show chassis cluster status '
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5506], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 00:22:24 srx-test mgd[5506]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 00:23:26 srx-test mgd[5511]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 00:23:26 srx-test mgd[5511]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 00:23:26 srx-test mgd[5511]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 5512, status 0
+Nov 16 2020 00:23:26 srx-test mgd[5511]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 00:23:26 srx-test mgd[5511]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 00:23:26 srx-test mgd[5511]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-interface-information level-extra=terse'
+Nov 16 2020 00:23:26 srx-test mgd[5511]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5511], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 00:23:27 srx-test mgd[5511]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 5513, status 0
+Nov 16 2020 09:08:18 srx-test /kernel: GENCFG: op 2 (USP Blob) failed; err 7 (Doesn't Exist)
+Nov 16 2020 09:23:27 srx-test mgd[5511]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-node-information path=/system/services/web-management/https/system-generated-certificate'
+Nov 16 2020 09:23:27 srx-test mgd[5511]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 09:23:59 srx-test mgd[5514]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 09:23:59 srx-test mgd[5514]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 09:23:59 srx-test mgd[5514]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 09:23:59 srx-test mgd[5514]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 09:23:59 srx-test mgd[5514]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5514], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 09:23:59 srx-test mgd[5514]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_CHILD_START: Starting child '/usr/bin/uptime'
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_CHILD_START: Starting child '/usr/libexec/ui/tzlist'
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_CHILD_STATUS: Cleanup child '/usr/bin/uptime', PID 5518, status 0
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'command rpc rpc command show system uptime '
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc command show chassis cluster status '
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-node-information path=/system/time-zone'
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-system-uptime-information'
+Nov 16 2020 09:24:15 srx-test mgd[5516]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5516], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 09:24:16 srx-test mgd[5516]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/tzlist', PID 5519, status 0
+Nov 16 2020 09:24:16 srx-test mgd[5516]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 09:24:33 srx-test mgd[5173]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run show log messages '
+Nov 16 2020 09:25:00 srx-test cron[5528]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 11:21:01 srx-test mgd[5474]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 11:21:01 srx-test mgd[5474]: UI_CHILD_START: Starting child '/usr/libexec/ui/show-users'
+Nov 16 2020 11:21:01 srx-test mgd[5474]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 11:21:01 srx-test mgd[5474]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-system-users-information'
+Nov 16 2020 11:21:01 srx-test mgd[5474]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5474], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 11:21:07 srx-test mgd[5474]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/show-users', PID 5480, status 0
+Nov 16 2020 11:21:07 srx-test mgd[5474]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 11:21:07 srx-test mgd[5474]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-information'
+Nov 16 2020 11:21:07 srx-test mgd[5474]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'request-web-management-login user=marybaker session-id=05310b6a734ea694eca619f1302d25c9530c348e from=10.79.36.244'
+Nov 16 2020 11:21:10 srx-test mgd[5474]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 11:21:22 srx-test mgd[5488]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 11:21:22 srx-test mgd[5488]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 11:21:22 srx-test mgd[5488]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc command show version '
+Nov 16 2020 11:21:22 srx-test mgd[5488]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 11:21:22 srx-test mgd[5488]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-information'
+Nov 16 2020 11:21:22 srx-test mgd[5488]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5488], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 11:21:22 srx-test mgd[5488]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 11:21:26 srx-test mgd[5490]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 11:21:26 srx-test mgd[5490]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 11:21:26 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 11:21:26 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed"'
+Nov 16 2020 11:21:26 srx-test mgd[5490]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5490], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 11:21:27 srx-test last message repeated 8 times
+Nov 16 2020 11:21:27 srx-test mgd[5490]: UI_CHILD_START: Starting child '/usr/bin/uptime'
+Nov 16 2020 11:21:27 srx-test mgd[5490]: UI_CHILD_STATUS: Cleanup child '/usr/bin/uptime', PID 5492, status 0
+Nov 16 2020 11:21:27 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 11:21:27 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-interface-information level-extra=terse'
+Nov 16 2020 11:21:27 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-license-information'
+Nov 16 2020 11:21:27 srx-test mgd[5490]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-system-uptime-information'
+Nov 16 2020 13:22:10 srx-test mgd[5495]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 13:22:10 srx-test mgd[5495]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 5497, status 0
+Nov 16 2020 13:22:10 srx-test mgd[5495]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc get-interface-information terse get-interface-information rpc rpc command show chassis cluster status '
+Nov 16 2020 13:22:10 srx-test mgd[5495]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 13:22:10 srx-test mgd[5495]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 13:22:10 srx-test mgd[5495]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-interface-information level-extra=terse'
+Nov 16 2020 13:22:10 srx-test mgd[5495]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5495], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 13:22:11 srx-test mgd[5495]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-fpc-information detail'
+Nov 16 2020 13:22:11 srx-test mgd[5495]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 13:22:11 srx-test mgd[5499]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 13:22:11 srx-test mgd[5499]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 13:22:11 srx-test mgd[5499]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 13:22:11 srx-test mgd[5499]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5499], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 13:22:12 srx-test mgd[5499]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc get-configuration configuration ethernet-switching-options configuration get-configuration rpc rpc get-configuration configuration logical-systems configuration get-configuration rpc rpc command show chassis cluster status '
+Nov 16 2020 13:22:12 srx-test mgd[5499]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 13:22:12 srx-test mgd[5499]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 13:22:12 srx-test mgd[5499]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 13:22:14 srx-test mgd[5500]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 13:22:14 srx-test mgd[5500]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 13:22:14 srx-test mgd[5500]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 13:22:14 srx-test mgd[5500]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [5500], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 18:42:52 srx-test RT_FLOW: RT_FLOW_SESSION_CREATE: session created 10.168.2.5/33239->10.79.32.4/53 junos-dns-udp 10.79.36.102/8011->10.79.32.4/53 nsw-src-interface None 17 
+Nov 16 2020 18:42:56 srx-test RT_FLOW: RT_FLOW_SESSION_CLOSE: session closed idle Timeout: 10.168.2.5/33239->10.79.32.4/53 junos-dns-udp 10.79.36.102/8011->10.79.32.4/53 nsw-src-interface None 17 All_Internal_Internet Internal Internet 1293 1(64) 1(96) 4 UNKNOWN UNKNOWN N/A(N/A) vlan.1 UNKNOWN
+Nov 16 2020 20:08:19 srx-test mgd[6665]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Nov 16 2020 20:08:19 srx-test mgd[6665]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 20:08:19 srx-test mgd[6665]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 20:08:19 srx-test mgd[6665]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 20:08:19 srx-test mgd[6665]: auto-snapshot is not configured
+Nov 16 2020 20:08:19 srx-test rpd[1336]: Decode ifd sp-0/0/0 index 150: ifdm_flags 0xc010
+Nov 16 2020 20:08:19 srx-test rpd[1336]: krt_inherit_ifd_aps_flags sp-0/0/0 index 150: <> from self
+Nov 16 2020 20:08:19 srx-test xntpd[4047]: Listening on interface ggsn_vpn, 10.0.0.1#123
+Nov 16 2020 20:08:19 srx-test xntpd[4047]: frequency initialized 0.000 PPM from /var/db/ntp.drift
+Nov 16 2020 20:08:19 srx-test xntpd[4047]: kernel time sync status 2040
+Nov 16 2020 20:08:19 srx-test xntpd[4047]: mlockall(): Resource temporarily unavailable
+Nov 16 2020 20:08:19 srx-test xntpd[4047]: ntpd 4.2.0-a Mon May 19 21:54:16 UTC 2014 (1)
+Nov 16 2020 20:08:19 srx-test xntpd[4047]: precision = 6.195 usec
+Nov 16 2020 20:08:19 srx-test xntpd[4047]: signal_no_reset: signal 1 had flags 10
+Nov 16 2020 20:08:20 srx-test init: l2cpd-service (PID 6977) exited with status=0 Normal Exit
+Nov 16 2020 20:08:20 srx-test init: l2cpd-service (PID 6985) started
+Nov 16 2020 20:08:20 srx-test kmd[1341]: Config download time: 0 seconds
+Nov 16 2020 20:08:20 srx-test kmd[1341]: Config download: Processed 10 - 11 messages
+Nov 16 2020 20:08:20 srx-test l2cp[6977]: JTASK_START: Start l2cpd[6977] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 20:08:20 srx-test mgd[6981]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:08:20 srx-test mgd[6981]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 20:08:20 srx-test mgd[6981]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [6981], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:08:20 srx-test mgd[6981]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:08:22 srx-test mgd[6665]: UI_CMDLINE_READ_LINE: User 'root', command 'show '
+Nov 16 2020 20:08:26 srx-test init: l2cpd-service (PID 6985) exited with status=0 Normal Exit
+Nov 16 2020 20:08:26 srx-test init: l2cpd-service (PID 6986) started
+Nov 16 2020 20:08:26 srx-test l2cp[6985]: JTASK_START: Start l2cpd[6985] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 20:08:31 srx-test init: l2cpd-service (PID 6986) exited with status=0 Normal Exit
+Nov 16 2020 20:08:31 srx-test init: l2cpd-service (PID 6987) started
+Nov 16 2020 20:08:31 srx-test l2cp[6986]: JTASK_START: Start l2cpd[6986] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 20:08:37 srx-test init: l2cpd-service (PID 6987) exited with status=0 Normal Exit
+Nov 16 2020 20:08:37 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 20:08:37 srx-test l2cp[6987]: JTASK_START: Start l2cpd[6987] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 20:08:37 srx-test mgd[6989]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:08:37 srx-test mgd[6989]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 20:08:37 srx-test mgd[6989]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [6989], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:08:37 srx-test mgd[6989]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:08:59 srx-test mgd[6665]: UI_CMDLINE_READ_LINE: User 'root', command 'run ping 10.8.8.8 '
+Nov 16 2020 20:09:07 srx-test xntpd[4047]: Configuring iburst flag for server
+Nov 16 2020 20:09:14 srx-test mgd[6665]: UI_CMDLINE_READ_LINE: User 'root', command 'run ping 10.79.36.24 '
+Nov 16 2020 20:09:17 srx-test mgd[6665]: UI_CMDLINE_READ_LINE: User 'root', command 'run ping 10.79.36.244 '
+Nov 16 2020 20:10:00 srx-test cron[6995]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:11:24 srx-test mgd[7001]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:11:24 srx-test mgd[7001]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7001], ssh-connection '10.79.36.244 57282 10.79.36.102 22', client-mode 'cli'
+Nov 16 2020 20:11:24 srx-test sshd[6997]: Accepted password for marybaker from 10.79.36.244 port 57282 ssh2
+Nov 16 2020 20:11:29 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'ping 10.8.8.8 '
+Nov 16 2020 20:11:33 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'ping 10.79.36.250 '
+Nov 16 2020 20:11:49 srx-test checklogin[7007]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 20:11:49 srx-test checklogin[7007]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 20:11:50 srx-test mgd[7011]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:11:50 srx-test mgd[7011]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 20:11:50 srx-test mgd[7011]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7011], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:11:50 srx-test mgd[7011]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:11:52 srx-test file[7010]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:11:52 srx-test file[7010]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 20:11:52 srx-test file[7010]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7010], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:11:52 srx-test file[7010]: auto-snapshot is not configured
+Nov 16 2020 20:11:53 srx-test file[7010]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:11:57 srx-test checklogin[7015]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 20:11:57 srx-test checklogin[7015]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 20:11:57 srx-test checklogin[7017]: WEB_AUTH_SUCCESS: Authenticated httpd client (username marybaker)
+Nov 16 2020 20:11:57 srx-test checklogin[7017]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 20:11:57 srx-test mgd[7012]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:11:57 srx-test mgd[7012]: UI_CHILD_START: Starting child '/usr/libexec/ui/show-users'
+Nov 16 2020 20:11:57 srx-test mgd[7012]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:11:57 srx-test mgd[7012]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:11:57 srx-test mgd[7012]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-system-users-information'
+Nov 16 2020 20:11:57 srx-test mgd[7012]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7012], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:12:11 srx-test mgd[7012]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/show-users', PID 7018, status 0
+Nov 16 2020 20:12:11 srx-test mgd[7012]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-autoinstallation-status-information'
+Nov 16 2020 20:12:11 srx-test mgd[7012]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 20:12:11 srx-test mgd[7012]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-information'
+Nov 16 2020 20:12:11 srx-test mgd[7012]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'request-web-management-login user=marybaker session-id=05310b6a734ea694eca619f1302d25c9530c348e from=10.79.36.244'
+Nov 16 2020 20:12:15 srx-test mgd[7012]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:12:22 srx-test mgd[7026]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:12:22 srx-test mgd[7026]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 20:12:22 srx-test mgd[7026]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:12:22 srx-test mgd[7026]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:12:22 srx-test mgd[7026]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-interface-information level-extra=terse'
+Nov 16 2020 20:12:22 srx-test mgd[7026]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7026], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:12:23 srx-test mgd[7026]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 7028, status 0
+Nov 16 2020 20:12:23 srx-test mgd[7026]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc get-interface-information terse get-interface-information rpc rpc command show chassis cluster status '
+Nov 16 2020 20:12:23 srx-test mgd[7026]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 20:12:23 srx-test mgd[7026]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 20:12:23 srx-test mgd[7026]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-fpc-information detail'
+Nov 16 2020 20:12:24 srx-test mgd[7026]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:12:24 srx-test mgd[7030]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:12:24 srx-test mgd[7030]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:12:24 srx-test mgd[7030]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'rpc request-authentication user marybaker user request-authentication rpc rpc get-configuration configuration ethernet-switching-options configuration get-configuration rpc rpc get-configuration configuration logical-systems configuration get-configuration rpc rpc command show chassis cluster status '
+Nov 16 2020 20:12:24 srx-test mgd[7030]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:12:24 srx-test mgd[7030]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 20:12:24 srx-test mgd[7030]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 20:12:24 srx-test mgd[7030]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7030], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:12:25 srx-test mgd[7030]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 20:12:25 srx-test mgd[7030]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:12:44 srx-test mgd[7031]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:12:44 srx-test mgd[7031]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:12:44 srx-test mgd[7031]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:12:44 srx-test mgd[7031]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 20:12:44 srx-test mgd[7031]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7031], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:12:44 srx-test mgd[7031]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:13:46 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'ping 10.79.36.250 '
+Nov 16 2020 20:13:52 srx-test mgd[7001]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 20:13:53 srx-test mgd[7001]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 20:13:53 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 7034, status 0
+Nov 16 2020 20:13:54 srx-test mgd[7001]: UI_CHILD_START: Starting child '/sbin/ifinfo'
+Nov 16 2020 20:13:54 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 7035, status 0
+Nov 16 2020 20:13:54 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'show interfaces ge-0/0/0 '
+Nov 16 2020 20:13:55 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/sbin/ifinfo', PID 7036, status 0
+Nov 16 2020 20:14:27 srx-test mgd[7039]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:14:27 srx-test mgd[7039]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:14:27 srx-test mgd[7039]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:14:27 srx-test mgd[7039]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 20:14:27 srx-test mgd[7039]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7039], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:14:29 srx-test mgd[7039]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:14:29 srx-test mgd[7041]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:14:29 srx-test mgd[7041]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:14:29 srx-test mgd[7041]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:14:29 srx-test mgd[7041]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 20:14:29 srx-test mgd[7041]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7041], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:14:29 srx-test mgd[7041]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:14:40 srx-test mgd[7043]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:14:40 srx-test mgd[7043]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:14:40 srx-test mgd[7043]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:14:40 srx-test mgd[7043]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 20:14:40 srx-test mgd[7043]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7043], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:14:41 srx-test mgd[7043]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_CFG_AUDIT_OTHER: User 'marybaker' delete: [juniper-config security nat source rule-set nsw_srcnat description] 
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_CFG_AUDIT_OTHER: User 'marybaker' replace: [juniper-config security nat source rule-set nsw_srcnat from] 
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_CFG_AUDIT_OTHER: User 'marybaker' replace: [juniper-config security nat source rule-set nsw_srcnat to] 
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'load-configuration action="replace" format="xml"'
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7045], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:14:57 srx-test mgd[7045]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:14:58 srx-test mgd[7050]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:14:58 srx-test mgd[7050]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:14:58 srx-test mgd[7050]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:14:58 srx-test mgd[7050]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="attributes"'
+Nov 16 2020 20:14:58 srx-test mgd[7050]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7050], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:14:59 srx-test mgd[7050]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:15:00 srx-test mgd[7052]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:15:00 srx-test mgd[7052]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 20:15:00 srx-test mgd[7052]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7052], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:15:00 srx-test mgd[7052]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:15:01 srx-test cron[7055]: (root) CMD (newsyslog)
+Nov 16 2020 20:15:01 srx-test cron[7056]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:15:03 srx-test file[7049]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:15:03 srx-test file[7049]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 20:15:03 srx-test file[7049]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7049], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:15:03 srx-test file[7049]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:15:03 srx-test file[7049]: auto-snapshot is not configured
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT: User 'marybaker' requested 'commit' operation (comment: none)
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding groups
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: finish license counters
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding groups
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: update license counters
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'commit-configuration'
+Nov 16 2020 20:15:05 srx-test mgd[7059]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7059], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:15:06 srx-test mgd[7059]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 20:15:06 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Nov 16 2020 20:15:07 srx-test mgd[7059]: UI_CHILD_START: Starting child '/usr/sbin/nsd'
+Nov 16 2020 20:15:07 srx-test mgd[7059]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7064, status 0
+Nov 16 2020 20:15:07 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: Network security daemon checking new configuration
+Nov 16 2020 20:15:07 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Nov 16 2020 20:15:09 srx-test mgd[7059]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 20:15:09 srx-test mgd[7059]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/nsd', PID 7065, status 0
+Nov 16 2020 20:15:09 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Nov 16 2020 20:15:09 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Nov 16 2020 20:15:11 srx-test mgd[7059]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7066, status 0
+Nov 16 2020 20:15:11 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Nov 16 2020 20:15:11 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/keyadmin.conf'
+Nov 16 2020 20:15:11 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Nov 16 2020 20:15:11 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: copying configuration to juniper.save
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear done
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear start
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Nov 16 2020 20:15:12 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Nov 16 2020 20:15:13 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Simple Network Management Protocol process', pid 1334, signal 31, status 0 with notification errors enabled
+Nov 16 2020 20:15:13 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 20:15:14 srx-test /kernel: GENCFG: op 2 (USP Blob) failed; err 7 (Doesn't Exist)
+Nov 16 2020 20:15:14 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying nsd(62)
+Nov 16 2020 20:15:14 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Nov 16 2020 20:15:14 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Network security daemon', pid 1357, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:15:14 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 20:15:14 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 20:15:15 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Nov 16 2020 20:15:15 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 20:15:15 srx-test mgd[7059]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 20:15:15 srx-test mgd[7059]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:15:15 srx-test mgd[7075]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:15:15 srx-test mgd[7075]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 20:15:15 srx-test mgd[7075]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7075], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:15:15 srx-test mgd[7075]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:15:18 srx-test file[7074]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:15:18 srx-test file[7074]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 20:15:18 srx-test file[7074]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7074], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:15:18 srx-test file[7074]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:15:18 srx-test file[7074]: auto-snapshot is not configured
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-node-information path=/security/zones/security-zone/host-inbound-traffic/protocols/protocol-name'
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-node-information path=/security/zones/security-zone/host-inbound-traffic/system-services/service-name'
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-node-information path=/security/zones/security-zone/interfaces/host-inbound-traffic/system-services/service-name'
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7078], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:15:28 srx-test mgd[7078]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:15:56 srx-test mgd[7080]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:15:56 srx-test mgd[7080]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:15:56 srx-test mgd[7080]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:15:56 srx-test mgd[7080]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed" groups="groups" inherit="defaults"'
+Nov 16 2020 20:15:56 srx-test mgd[7080]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed" inherit="attributes"'
+Nov 16 2020 20:15:56 srx-test mgd[7080]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-firewall-policies zone-context'
+Nov 16 2020 20:15:56 srx-test mgd[7080]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7080], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:15:57 srx-test mgd[7080]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:13 srx-test mgd[7082]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:16:13 srx-test mgd[7082]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:16:13 srx-test mgd[7082]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:16:13 srx-test mgd[7082]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 20:16:13 srx-test mgd[7082]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7082], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:13 srx-test mgd[7082]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:14 srx-test last message repeated 4 times
+Nov 16 2020 20:16:14 srx-test mgd[7084]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:16:14 srx-test mgd[7084]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:16:14 srx-test mgd[7084]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:16:14 srx-test mgd[7084]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 20:16:14 srx-test mgd[7084]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7084], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:15 srx-test mgd[7084]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:21 srx-test mgd[7087]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:16:21 srx-test mgd[7087]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:16:21 srx-test mgd[7087]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:16:21 srx-test mgd[7087]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 20:16:21 srx-test mgd[7087]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7087], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:22 srx-test mgd[7087]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:24 srx-test mgd[7088]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:16:24 srx-test mgd[7088]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:16:24 srx-test mgd[7088]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:16:24 srx-test mgd[7088]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 20:16:24 srx-test mgd[7088]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7088], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:24 srx-test mgd[7088]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_CFG_AUDIT_OTHER: User 'marybaker' set: [juniper-config security policies from-zone Internet to-zone Internal policy internet match application any] 
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_CFG_AUDIT_OTHER: User 'marybaker' set: [juniper-config security policies from-zone Internet to-zone Internal policy internet match destination-address any] 
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_CFG_AUDIT_OTHER: User 'marybaker' set: [juniper-config security policies from-zone Internet to-zone Internal policy internet match source-address any] 
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_CFG_AUDIT_OTHER: User 'marybaker' set: [juniper-config security policies from-zone Internet to-zone Internal policy internet match] 
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_CFG_AUDIT_OTHER: User 'marybaker' set: [juniper-config security policies from-zone Internet to-zone Internal policy internet then permit] 
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_CFG_AUDIT_OTHER: User 'marybaker' set: [juniper-config security policies from-zone Internet to-zone Internal policy internet then] 
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'load-configuration format="xml"'
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7092], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:41 srx-test mgd[7092]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:42 srx-test mgd[7097]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:16:42 srx-test mgd[7097]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:16:42 srx-test mgd[7097]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:16:42 srx-test mgd[7097]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed" inherit="attributes"'
+Nov 16 2020 20:16:42 srx-test mgd[7097]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7097], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:42 srx-test mgd[7099]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:16:42 srx-test mgd[7099]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 20:16:42 srx-test mgd[7099]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7099], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:16:42 srx-test mgd[7099]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:16:43 srx-test mgd[7097]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed" groups="groups" inherit="defaults"'
+Nov 16 2020 20:16:43 srx-test mgd[7097]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:45 srx-test file[7096]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:16:45 srx-test file[7096]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 20:16:45 srx-test file[7096]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7096], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:45 srx-test file[7096]: auto-snapshot is not configured
+Nov 16 2020 20:16:46 srx-test file[7096]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT: User 'marybaker' requested 'commit' operation (comment: none)
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding groups
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: finish license counters
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding groups
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: update license counters
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'commit-configuration'
+Nov 16 2020 20:16:48 srx-test mgd[7100]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7100], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:49 srx-test mgd[7100]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 20:16:49 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Nov 16 2020 20:16:49 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Nov 16 2020 20:16:50 srx-test mgd[7100]: UI_CHILD_START: Starting child '/usr/sbin/nsd'
+Nov 16 2020 20:16:50 srx-test mgd[7100]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7105, status 0
+Nov 16 2020 20:16:50 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: Network security daemon checking new configuration
+Nov 16 2020 20:16:50 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Nov 16 2020 20:16:51 srx-test mgd[7100]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 20:16:51 srx-test mgd[7100]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/nsd', PID 7106, status 0
+Nov 16 2020 20:16:51 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Nov 16 2020 20:16:51 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7107, status 0
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/keyadmin.conf'
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: copying configuration to juniper.save
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear done
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear start
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Nov 16 2020 20:16:54 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Nov 16 2020 20:16:55 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying nsd(62)
+Nov 16 2020 20:16:55 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Nov 16 2020 20:16:55 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Simple Network Management Protocol process', pid 1334, signal 31, status 0 with notification errors enabled
+Nov 16 2020 20:16:55 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 20:16:55 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 20:16:56 srx-test /kernel: GENCFG: op 2 (USP Blob) failed; err 7 (Doesn't Exist)
+Nov 16 2020 20:16:56 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Nov 16 2020 20:16:56 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 20:16:56 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Network security daemon', pid 1357, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:16:56 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 20:16:56 srx-test mgd[7100]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 20:16:56 srx-test mgd[7100]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:16:57 srx-test mgd[7116]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:16:57 srx-test mgd[7116]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 20:16:57 srx-test mgd[7116]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7116], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:16:57 srx-test mgd[7116]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:16:59 srx-test file[7115]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:16:59 srx-test file[7115]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 20:16:59 srx-test file[7115]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7115], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:16:59 srx-test file[7115]: auto-snapshot is not configured
+Nov 16 2020 20:17:00 srx-test file[7115]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:17:03 srx-test mgd[7117]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:17:03 srx-test mgd[7117]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:17:03 srx-test mgd[7117]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:17:03 srx-test mgd[7117]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed" groups="groups" inherit="defaults"'
+Nov 16 2020 20:17:03 srx-test mgd[7117]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" changed="changed" inherit="attributes"'
+Nov 16 2020 20:17:03 srx-test mgd[7117]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7117], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:17:04 srx-test mgd[7117]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:17:14 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'ping 10.79.36.250 '
+Nov 16 2020 20:17:40 srx-test last message repeated 2 times
+Nov 16 2020 20:17:40 srx-test mgd[7120]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:17:40 srx-test mgd[7120]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:17:40 srx-test mgd[7120]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:17:40 srx-test mgd[7120]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults"'
+Nov 16 2020 20:17:40 srx-test mgd[7120]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 20:17:40 srx-test mgd[7120]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7120], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:17:42 srx-test mgd[7120]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:18:21 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'show configuration '
+Nov 16 2020 20:19:21 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'edit '
+Nov 16 2020 20:19:21 srx-test mgd[7001]: UI_DBASE_LOGIN_EVENT: User 'marybaker' entering configuration mode
+Nov 16 2020 20:19:30 srx-test mgd[7001]: UI_CFG_AUDIT_OTHER: User 'marybaker' delete: [interfaces ge-0/0/0 unit 0 family inet filter] 
+Nov 16 2020 20:19:30 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'delete interfaces ge-0/0/0 unit 0 family inet filter '
+Nov 16 2020 20:19:33 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'show interfaces ge-0/0/0 '
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'commit '
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT: User 'marybaker' requested 'commit' operation (comment: none)
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding groups
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: finish license counters
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding groups
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Nov 16 2020 20:19:35 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: update license counters
+Nov 16 2020 20:19:36 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/rpd'
+Nov 16 2020 20:19:36 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7125, status 0
+Nov 16 2020 20:19:36 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Routing protocols process checking new configuration
+Nov 16 2020 20:19:36 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Nov 16 2020 20:19:37 srx-test rpd: proceeding. -C
+Nov 16 2020 20:19:38 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/dfwd'
+Nov 16 2020 20:19:38 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/kmd'
+Nov 16 2020 20:19:38 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/kmd', PID 7129, status 0
+Nov 16 2020 20:19:38 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/rpd', PID 7126, status 0
+Nov 16 2020 20:19:38 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Firewall process checking new configuration
+Nov 16 2020 20:19:38 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: IPSec Key Management daemon checking new configuration
+Nov 16 2020 20:19:39 srx-test mgd[7001]: UI_CHILD_START: Starting child '/sbin/dcd'
+Nov 16 2020 20:19:39 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/dfwd', PID 7130, status 0
+Nov 16 2020 20:19:39 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Interface control process checking new configuration
+Nov 16 2020 20:19:40 srx-test cgatool: cga_generate: --- Concatenating prefix and eui64 ---
+Nov 16 2020 20:19:40 srx-test cgatool: cga_generate: --- Finding modifier ---
+Nov 16 2020 20:19:40 srx-test cgatool: cga_generate: --- Setting bits ---
+Nov 16 2020 20:19:40 srx-test cgatool: cga_generate: generated address is fe80::4e2:652b:8e56:ca48
+Nov 16 2020 20:19:40 srx-test cgatool: cga_key2der: DER-encoded key is 162 bytes
+Nov 16 2020 20:19:40 srx-test cgatool: concat: fe80::4e2:652b:8e56:ca48
+Nov 16 2020 20:19:40 srx-test cgatool: opssec: 0 ops per second
+Nov 16 2020 20:19:40 srx-test cgatool: opssec: took      0.000181 seconds (0 ops)
+Nov 16 2020 20:19:40 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/mib2d'
+Nov 16 2020 20:19:40 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/sbin/dcd', PID 7132, status 0
+Nov 16 2020 20:19:40 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Management Information Base II process checking new configuration
+Nov 16 2020 20:19:41 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/dhcpd'
+Nov 16 2020 20:19:41 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/pfed'
+Nov 16 2020 20:19:41 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/mib2d', PID 7135, status 0
+Nov 16 2020 20:19:41 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/pfed', PID 7136, status 0
+Nov 16 2020 20:19:41 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Dynamic Host Configuration Protocol process checking new configuration
+Nov 16 2020 20:19:41 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Packet Forwarding Engine statistics management process checking new configuration
+Nov 16 2020 20:19:42 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/dfcd'
+Nov 16 2020 20:19:42 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/nsd'
+Nov 16 2020 20:19:42 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/dfcd', PID 7138, status 0
+Nov 16 2020 20:19:42 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/dhcpd', PID 7137, status 0
+Nov 16 2020 20:19:42 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Dynamic flow capture service checking new configuration
+Nov 16 2020 20:19:42 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Network security daemon checking new configuration
+Nov 16 2020 20:19:42 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Redundancy interface management process checking new configuration
+Nov 16 2020 20:19:43 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/l2ald'
+Nov 16 2020 20:19:43 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/mcsnoopd'
+Nov 16 2020 20:19:43 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/l2ald', PID 7140, status 0
+Nov 16 2020 20:19:43 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/nsd', PID 7139, status 0
+Nov 16 2020 20:19:43 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Layer 2 address flooding and learning process checking new configuration
+Nov 16 2020 20:19:43 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Multicast Snooping process checking new configuration
+Nov 16 2020 20:19:44 srx-test eswd: proceeding. -C
+Nov 16 2020 20:19:44 srx-test mcsnoopd: proceeding. -C
+Nov 16 2020 20:19:44 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/eswd'
+Nov 16 2020 20:19:44 srx-test mgd[7001]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 20:19:44 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/eswd', PID 7142, status 0
+Nov 16 2020 20:19:44 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/mcsnoopd', PID 7141, status 0
+Nov 16 2020 20:19:44 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Ethernet Switching Process checking new configuration
+Nov 16 2020 20:19:44 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Nov 16 2020 20:19:44 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7143, status 0
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/ifinfo.conf'
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/ifmdata.conf'
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: copying configuration to juniper.save
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear done
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear start
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Nov 16 2020 20:19:46 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: not executing ui_commit in rc.ui
+Nov 16 2020 20:19:47 srx-test eswd[1368]: Bridge Address: add 2c:6b:fffffff5:57:ffffffc4:ffffff90
+Nov 16 2020 20:19:47 srx-test eswd[1368]: JTASK_TASK_REINIT: Reinitializing
+Nov 16 2020 20:19:47 srx-test eswd[1368]: task_reconfigure reinitializing done
+Nov 16 2020 20:19:47 srx-test mcsn[1365]: JTASK_TASK_REINIT: Reinitializing
+Nov 16 2020 20:19:47 srx-test mcsn[1365]: task_reconfigure reinitializing done
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying dcd(15)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying dfcd(36)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying dfwd(14)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying dhcpd(32)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying eswd(87)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying kmd(8)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying l2ald(80)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying mcsnoopd(82)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying mib2d(17)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying none(0)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying nsd(62)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying pfed(20)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying rpd(2)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying sdxd(86)
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: cannot signal 'Dynamic flow capture service', signal 1, no pid
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: cannot signal 'None process', signal 1, no pid
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Dynamic Host Configuration Protocol process', pid 4054, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Ethernet Switching Process', pid 1368, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Firewall process', pid 1343, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'IPSec Key Management daemon', pid 1341, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Interface control process', pid 1329, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Layer 2 address flooding and learning process', pid 1337, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Management Information Base II process', pid 1335, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Multicast Snooping process', pid 1365, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Network security daemon', pid 1357, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Packet Forwarding Engine statistics management process', pid 1339, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Routing protocols process', pid 1336, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Service Deployment Client', pid 1367, signal 1, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Simple Network Management Protocol process', pid 1334, signal 31, status 0 with notification errors enabled
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 20:19:47 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 20:19:47 srx-test rpd[1336]: RPD_TASK_REINIT: Reinitializing
+Nov 16 2020 20:19:47 srx-test rpd[1336]: Read ddl top handle 0x0 for logical-router default
+Nov 16 2020 20:19:47 srx-test rpd[1336]: task state:  <ReConfig Foreground ParseConfig>
+Nov 16 2020 20:19:47 srx-test rpd[1336]: task_reconfigure reinitializing done
+Nov 16 2020 20:19:48 srx-test /kernel: GENCFG: op 2 (USP Blob) failed; err 7 (Doesn't Exist)
+Nov 16 2020 20:19:48 srx-test eswd[1368]: Bridge Address: add 2c:6b:fffffff5:57:ffffffc4:ffffff90
+Nov 16 2020 20:19:48 srx-test kmd[1341]: Config download time: 0 seconds
+Nov 16 2020 20:19:48 srx-test kmd[1341]: Config download: Processed 11 - 12 messages
+Nov 16 2020 20:19:48 srx-test last message repeated 2 times
+Nov 16 2020 20:19:48 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 20:19:48 srx-test rpd[1336]: Decode ifd fxp2 index 3: ifdm_flags 0x0
+Nov 16 2020 20:19:48 srx-test rpd[1336]: Decode ifd sp-0/0/0 index 150: ifdm_flags 0xc010
+Nov 16 2020 20:19:48 srx-test rpd[1336]: Decode ifd vlan index 133: ifdm_flags 0x0
+Nov 16 2020 20:19:48 srx-test rpd[1336]: krt_inherit_ifd_aps_flags fxp2 index 3: <> from self
+Nov 16 2020 20:19:48 srx-test rpd[1336]: krt_inherit_ifd_aps_flags sp-0/0/0 index 150: <> from self
+Nov 16 2020 20:19:48 srx-test rpd[1336]: krt_inherit_ifd_aps_flags vlan index 133: <> from self
+Nov 16 2020 20:19:49 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Nov 16 2020 20:19:49 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 20:19:49 srx-test mgd[7001]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 20:19:50 srx-test srx-test IFP trace> ifp_iff_change: IFF change: "ge-0/0/0.0" 
+Nov 16 2020 20:20:00 srx-test cron[7156]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:21:38 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run ping 10.8.8.8 '
+Nov 16 2020 20:21:47 srx-test mgd[7001]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'show '
+Nov 16 2020 20:22:29 srx-test mgd[7159]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:22:29 srx-test mgd[7159]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:22:29 srx-test mgd[7159]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:22:29 srx-test mgd[7159]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'request-web-management-logout session-id=05310b6a734ea694eca619f1302d25c9530c348e'
+Nov 16 2020 20:22:29 srx-test mgd[7159]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7159], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:22:29 srx-test mgd[7159]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:22:32 srx-test checklogin[7167]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 20:22:32 srx-test checklogin[7167]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 20:22:32 srx-test mgd[7168]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:22:32 srx-test mgd[7168]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 20:22:32 srx-test mgd[7168]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7168], ssh-connection '', client-mode 'cli'
+Nov 16 2020 20:22:32 srx-test mgd[7168]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:22:35 srx-test file[7163]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 20:22:35 srx-test file[7163]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 20:22:35 srx-test file[7163]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7163], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:22:35 srx-test file[7163]: auto-snapshot is not configured
+Nov 16 2020 20:22:36 srx-test file[7163]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 20:22:41 srx-test checklogin[7172]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 20:22:41 srx-test checklogin[7172]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 20:22:41 srx-test checklogin[7174]: WEB_AUTH_SUCCESS: Authenticated httpd client (username marybaker)
+Nov 16 2020 20:22:41 srx-test checklogin[7174]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 20:22:41 srx-test mgd[7170]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 20:22:41 srx-test mgd[7170]: UI_CHILD_START: Starting child '/usr/libexec/ui/show-users'
+Nov 16 2020 20:22:41 srx-test mgd[7170]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 20:22:41 srx-test mgd[7170]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 20:22:41 srx-test mgd[7170]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-system-users-information'
+Nov 16 2020 20:22:41 srx-test mgd[7170]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7170], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 20:22:43 srx-test mgd[7170]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/show-users', PID 7175, status 0
+Nov 16 2020 20:22:43 srx-test mgd[7170]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-autoinstallation-status-information'
+Nov 16 2020 20:22:43 srx-test mgd[7170]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 20:22:43 srx-test mgd[7170]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-information'
+Nov 16 2020 20:22:43 srx-test mgd[7170]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'request-web-management-login user=marybaker session-id=05310b6a734ea694eca619f1302d25c9530c348e from=10.79.36.244'
+Nov 16 2020 20:22:46 srx-test mgd[7170]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 20:24:51 srx-test eswd[1368]: ESWD_STP_STATE_CHANGE_INFO: STP state for interface ge-0/0/15.0 context id 0 changed from FORWARDING to BLOCKING
+Nov 16 2020 20:24:51 srx-test mib2d[1335]: SNMP_TRAP_LINK_DOWN: ifIndex 526, ifAdminStatus up(1), ifOperStatus down(2), ifName ge-0/0/15
+Nov 16 2020 20:24:51 srx-test mib2d[1335]: SNMP_TRAP_LINK_DOWN: ifIndex 548, ifAdminStatus up(1), ifOperStatus down(2), ifName vlan.1
+Nov 16 2020 20:24:51 srx-test rpd[1336]: Decode ifd ge-0/0/15 index 149: ifdm_flags 0xc001
+Nov 16 2020 20:24:51 srx-test rpd[1336]: EVENT <UpDown> ge-0/0/15 index 149 <Broadcast Multicast> address #0 2c.6b.f5.57.c4.8f
+Nov 16 2020 20:24:51 srx-test rpd[1336]: EVENT <UpDown> ge-0/0/15.0 index 85 <Broadcast Multicast> address #0 2c.6b.f5.57.c4.8f
+Nov 16 2020 20:24:51 srx-test rpd[1336]: EVENT <UpDown> vlan.1 index 88 <Broadcast Multicast> address #0 2c.6b.f5.57.c4.90
+Nov 16 2020 20:24:51 srx-test rpd[1336]: EVENT UpDown vlan.1 index 88 10.168.1.1/24 -> 10.168.1.255 <Broadcast Multicast Localup>
+Nov 16 2020 20:24:51 srx-test rpd[1336]: krt_inherit_ifd_aps_flags ge-0/0/15 index 149: <> from self
+Nov 16 2020 20:24:51 srx-test srx-test IFP trace> ifp_ifl_anydown_change_event: IFL anydown change event: "vlan.1" 
+Nov 16 2020 20:24:51 srx-test srx-test IFP trace> ifp_ifl_chg: IFL chg: "vlan.1 ifl_id 88" 
+Nov 16 2020 20:25:01 srx-test cron[7184]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:30:00 srx-test cron[7188]: (root) CMD (newsyslog)
+Nov 16 2020 20:30:00 srx-test cron[7189]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:31:24 srx-test /kernel: KERN_ARP_ADDR_CHANGE: arp info overwritten for 10.79.36.244 from 3c:07:54:03:8e:f8 to e4:ce:8f:46:61:28
+Nov 16 2020 20:33:43 srx-test /kernel: KERN_ARP_ADDR_CHANGE: arp info overwritten for 10.79.36.244 from e4:ce:8f:46:61:28 to 3c:07:54:03:8e:f8
+Nov 16 2020 20:35:00 srx-test cron[7193]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:40:01 srx-test cron[7196]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:45:01 srx-test cron[7200]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:45:01 srx-test cron[7201]: (root) CMD (newsyslog)
+Nov 16 2020 20:50:00 srx-test cron[7205]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 20:55:00 srx-test cron[7208]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:00:01 srx-test cron[7212]: (root) CMD (newsyslog)
+Nov 16 2020 21:00:01 srx-test cron[7213]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:04:16 srx-test sshd[7216]: Accepted password for marybaker from 10.79.36.244 port 59044 ssh2
+Nov 16 2020 21:04:17 srx-test mgd[7220]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 21:04:17 srx-test mgd[7220]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7220], ssh-connection '10.79.36.244 59044 10.79.36.102 22', client-mode 'cli'
+Nov 16 2020 21:05:01 srx-test cron[7222]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:09:22 srx-test srx-test L2ALM: trying master connection, status 61, attempt 80000 
+Nov 16 2020 21:10:00 srx-test cron[7225]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:15:00 srx-test cron[7229]: (root) CMD (newsyslog)
+Nov 16 2020 21:15:00 srx-test cron[7230]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:20:01 srx-test cron[7234]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:25:01 srx-test cron[7237]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:30:00 srx-test cron[7241]: (root) CMD (newsyslog)
+Nov 16 2020 21:30:00 srx-test cron[7242]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:35:00 srx-test cron[7246]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:40:00 srx-test cron[7249]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:45:01 srx-test cron[7253]: (root) CMD (newsyslog)
+Nov 16 2020 21:45:01 srx-test cron[7254]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:50:00 srx-test cron[7258]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 21:55:00 srx-test cron[7261]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:00:00 srx-test cron[7265]: (root) CMD (newsyslog)
+Nov 16 2020 22:00:00 srx-test cron[7266]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:05:01 srx-test cron[7270]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:10:01 srx-test cron[7273]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:15:00 srx-test cron[7277]: (root) CMD (newsyslog)
+Nov 16 2020 22:15:00 srx-test cron[7278]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:20:00 srx-test cron[7282]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:25:01 srx-test cron[7285]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:25:04 srx-test sshd[7287]: Accepted password for marybaker from 10.79.36.244 port 60656 ssh2
+Nov 16 2020 22:25:05 srx-test mgd[7291]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 22:25:05 srx-test mgd[7291]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7291], ssh-connection '10.79.36.244 60656 10.79.36.102 22', client-mode 'cli'
+Nov 16 2020 22:25:25 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'show version '
+Nov 16 2020 22:25:38 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'edit '
+Nov 16 2020 22:25:38 srx-test mgd[7291]: UI_DBASE_LOGIN_EVENT: User 'marybaker' entering configuration mode
+Nov 16 2020 22:25:44 srx-test mgd[7291]: UI_CFG_AUDIT_OTHER: User 'marybaker' set: [system services ftp] 
+Nov 16 2020 22:25:44 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'set system services ftp '
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'commit '
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT: User 'marybaker' requested 'commit' operation (comment: none)
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: copying juniper.db to juniper.data+
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding groups
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: expanding interface-ranges
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: exporting juniper.conf
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: finish license counters
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: finished copying juniper.db to juniper.data+
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding groups
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: finished expanding interface-ranges
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: finished loading commit script changes
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: no commit script changes
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: no transient commit script changes
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: propagating foreign files
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: setup foreign files
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: start loading commit script changes
+Nov 16 2020 22:25:46 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: update license counters
+Nov 16 2020 22:25:47 srx-test mgd[7291]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 22:25:47 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: complete foreign files
+Nov 16 2020 22:25:47 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: dropping unchanged foreign files
+Nov 16 2020 22:25:48 srx-test mgd[7291]: UI_CHILD_START: Starting child '/usr/sbin/ffp'
+Nov 16 2020 22:25:48 srx-test mgd[7291]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7295, status 0
+Nov 16 2020 22:25:48 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: commit wrapup...
+Nov 16 2020 22:25:48 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: daemons checking new configuration
+Nov 16 2020 22:25:48 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: start ffp activate
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_CHILD_STATUS: Cleanup child '/usr/sbin/ffp', PID 7296, status 0
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/certs'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/crontab'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/hosts'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/inetd.conf'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/newsyslog.conf'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/pam.conf'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/rc.conf.inc'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/etc/sysids'
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: executing foreign_commands
+Nov 16 2020 22:25:50 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: executing ui_commit in rc.ui
+Nov 16 2020 22:25:55 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: copying configuration to juniper.save
+Nov 16 2020 22:25:55 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: finish ffp activate
+Nov 16 2020 22:25:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: Rotate backup configs
+Nov 16 2020 22:25:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: activating '/var/run/db/juniper.data'
+Nov 16 2020 22:25:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear done
+Nov 16 2020 22:25:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: db_check_constraint_ids_clear start
+Nov 16 2020 22:25:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear done
+Nov 16 2020 22:25:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: db_groups_info_clear start
+Nov 16 2020 22:25:57 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress:  notifying inetd(30)
+Nov 16 2020 22:25:57 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: notifying daemons of new configuration
+Nov 16 2020 22:25:57 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Inet process', pid 1338, signal 1, status 0 with notification errors enabled
+Nov 16 2020 22:25:57 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Simple Network Management Protocol process', pid 1334, signal 31, status 0 with notification errors enabled
+Nov 16 2020 22:25:57 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 22:25:57 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 22:25:58 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: commit complete
+Nov 16 2020 22:25:58 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 22:25:58 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync begins
+Nov 16 2020 22:25:58 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: ssync ends
+Nov 16 2020 22:25:59 srx-test ftpd[7566]: connection from 10.79.36.244 (10.79.36.244)
+Nov 16 2020 22:26:00 srx-test cron[1089]: (*system*) RELOAD (/etc/crontab)
+Nov 16 2020 22:26:00 srx-test ftpd[7566]: FTP LOGIN FROM 10.79.36.244 as marybaker
+Nov 16 2020 22:26:09 srx-test ftpd[7568]: connection from 10.79.36.244 (10.79.36.244)
+Nov 16 2020 22:26:10 srx-test ftpd[7568]: FTP LOGIN FROM 10.79.36.244 as marybaker
+Nov 16 2020 22:26:26 srx-test /kernel: KERNEL_MEMORY_CRITICAL: System low on free memory, notifying init (#1).
+Nov 16 2020 22:26:26 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:26:27 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:26:36 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:26:36 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:26:38 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:26:38 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:26:49 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:26:49 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:26:49 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:26:49 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:26:49 srx-test init: l2cpd-service (PID 7570) started
+Nov 16 2020 22:27:29 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:27:29 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:27:29 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:27:30 srx-test l2cp[7570]: JTASK_START: Start l2cpd[7570] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:27:31 srx-test init: l2cpd-service (PID 7570) exited with status=0 Normal Exit
+Nov 16 2020 22:27:31 srx-test init: l2cpd-service (PID 7572) started
+Nov 16 2020 22:27:34 srx-test init: l2cpd-service (PID 7572) exited with status=0 Normal Exit
+Nov 16 2020 22:27:34 srx-test init: l2cpd-service (PID 7573) started
+Nov 16 2020 22:27:34 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:27:34 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:27:34 srx-test l2cp[7572]: JTASK_START: Start l2cpd[7572] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:27:34 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:27:39 srx-test init: l2cpd-service (PID 7573) exited with status=0 Normal Exit
+Nov 16 2020 22:27:39 srx-test init: l2cpd-service (PID 7574) started
+Nov 16 2020 22:27:39 srx-test l2cp[7573]: JTASK_START: Start l2cpd[7573] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:27:44 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:27:44 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:27:44 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:27:44 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:27:45 srx-test init: l2cpd-service (PID 7574) exited with status=0 Normal Exit
+Nov 16 2020 22:27:45 srx-test init: l2cpd-service (PID 7577) started
+Nov 16 2020 22:27:45 srx-test l2cp[7574]: JTASK_START: Start l2cpd[7574] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:27:50 srx-test init: l2cpd-service (PID 7577) exited with status=0 Normal Exit
+Nov 16 2020 22:27:50 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:27:50 srx-test l2cp[7577]: JTASK_START: Start l2cpd[7577] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:28:51 srx-test mgd[7584]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:28:52 srx-test mgd[7585]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:28:53 srx-test mgd[7584]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7584], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:28:53 srx-test mgd[7585]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7585], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:28:54 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:28:54 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:28:54 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:28:54 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:28:54 srx-test init: l2cpd-service (PID 7587) started
+Nov 16 2020 22:28:54 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:28:54 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:28:54 srx-test mgd[7584]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:28:54 srx-test mgd[7585]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:28:54 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:28:55 srx-test mgd[7584]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:29:03 srx-test mgd[7585]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:29:04 srx-test checklogin[7590]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 22:29:04 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:29:04 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:29:04 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:29:04 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:29:05 srx-test checklogin[7590]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 22:29:05 srx-test init: l2cpd-service (PID 7587) exited with status=0 Normal Exit
+Nov 16 2020 22:29:05 srx-test init: l2cpd-service (PID 7592) started
+Nov 16 2020 22:29:05 srx-test l2cp[7587]: JTASK_START: Start l2cpd[7587] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:29:05 srx-test mgd[7593]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:29:05 srx-test mgd[7593]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:29:05 srx-test mgd[7593]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7593], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:29:05 srx-test mgd[7593]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:29:08 srx-test checklogin[7595]: WEB_AUTH_SUCCESS: Authenticated httpd client (username marybaker)
+Nov 16 2020 22:29:08 srx-test checklogin[7595]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 22:29:08 srx-test mgd[7582]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 22:29:08 srx-test mgd[7582]: UI_CHILD_START: Starting child '/usr/libexec/ui/show-users'
+Nov 16 2020 22:29:08 srx-test mgd[7582]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 22:29:08 srx-test mgd[7582]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 22:29:08 srx-test mgd[7582]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-system-users-information'
+Nov 16 2020 22:29:08 srx-test mgd[7582]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7582], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 22:29:10 srx-test init: l2cpd-service (PID 7592) exited with status=0 Normal Exit
+Nov 16 2020 22:29:10 srx-test init: l2cpd-service (PID 7597) started
+Nov 16 2020 22:29:10 srx-test l2cp[7592]: JTASK_START: Start l2cpd[7592] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:29:16 srx-test init: l2cpd-service (PID 7597) exited with status=0 Normal Exit
+Nov 16 2020 22:29:16 srx-test init: l2cpd-service (PID 7601) started
+Nov 16 2020 22:29:16 srx-test l2cp[7597]: JTASK_START: Start l2cpd[7597] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:29:17 srx-test mgd[7582]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/show-users', PID 7596, status 0
+Nov 16 2020 22:29:18 srx-test mgd[7582]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-autoinstallation-status-information'
+Nov 16 2020 22:29:18 srx-test mgd[7582]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'request-web-management-login user=marybaker session-id=05310b6a734ea694eca619f1302d25c9530c348e from=10.79.36.244'
+Nov 16 2020 22:29:19 srx-test mgd[7582]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 22:29:20 srx-test mgd[7582]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-information'
+Nov 16 2020 22:29:22 srx-test init: l2cpd-service (PID 7601) exited with status=0 Normal Exit
+Nov 16 2020 22:29:22 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:29:22 srx-test l2cp[7601]: JTASK_START: Start l2cpd[7601] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:29:29 srx-test mgd[7605]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:29:29 srx-test mgd[7605]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:29:29 srx-test mgd[7605]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7605], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:29:29 srx-test mgd[7605]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:29:31 srx-test mgd[7582]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 22:29:32 srx-test mgd[7609]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:29:32 srx-test mgd[7609]: UI_CMDLINE_READ_LINE: User 'root', command 'xml-mode '
+Nov 16 2020 22:29:32 srx-test mgd[7609]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7609], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:29:33 srx-test mgd[7609]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:29:48 srx-test /kernel: KERNEL_MEMORY_CRITICAL: System low on free memory, notifying init (#8).
+Nov 16 2020 22:29:48 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:29:48 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:29:50 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:29:50 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:29:52 srx-test file[7608]: auto-snapshot is not configured
+Nov 16 2020 22:29:53 srx-test file[7608]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:29:53 srx-test file[7608]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7608], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 22:29:54 srx-test file[7608]: UI_JUNOSCRIPT_CMD: User 'root' used JUNOScript client to run command 'get-configuration database="candidate" inherit="defaults" format="xml"'
+Nov 16 2020 22:29:57 srx-test file[7608]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:30:00 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:30:00 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:30:00 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:30:00 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:30:00 srx-test init: l2cpd-service (PID 7611) started
+Nov 16 2020 22:30:03 srx-test cron[7615]: (root) CMD (newsyslog)
+Nov 16 2020 22:30:03 srx-test cron[7616]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:30:13 srx-test init: l2cpd-service (PID 7611) exited with status=0 Normal Exit
+Nov 16 2020 22:30:13 srx-test init: l2cpd-service (PID 7620) started
+Nov 16 2020 22:30:13 srx-test l2cp[7611]: JTASK_START: Start l2cpd[7611] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:30:14 srx-test mgd[7621]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:30:14 srx-test mgd[7621]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:30:14 srx-test mgd[7621]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7621], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:30:14 srx-test mgd[7621]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:30:19 srx-test init: l2cpd-service (PID 7620) exited with status=0 Normal Exit
+Nov 16 2020 22:30:19 srx-test init: l2cpd-service (PID 7622) started
+Nov 16 2020 22:30:19 srx-test l2cp[7620]: JTASK_START: Start l2cpd[7620] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:30:24 srx-test init: l2cpd-service (PID 7622) exited with status=0 Normal Exit
+Nov 16 2020 22:30:24 srx-test init: l2cpd-service (PID 7623) started
+Nov 16 2020 22:30:24 srx-test l2cp[7622]: JTASK_START: Start l2cpd[7622] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:30:30 srx-test init: l2cpd-service (PID 7623) exited with status=0 Normal Exit
+Nov 16 2020 22:30:30 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:30:30 srx-test l2cp[7623]: JTASK_START: Start l2cpd[7623] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:30:30 srx-test mgd[7625]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:30:30 srx-test mgd[7625]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:30:30 srx-test mgd[7625]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7625], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:30:30 srx-test mgd[7625]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:30:47 srx-test mgd[7291]: /usr/libexec/ui/package -X update -no-validate /cf/var/home/marybaker/junos-srxsme-12.1X46-D65.4-domestic.tar
+Nov 16 2020 22:30:47 srx-test mgd[7291]: UI_CHILD_START: Starting child '/usr/libexec/ui/package'
+Nov 16 2020 22:30:47 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run request system software add junos-srxsme-12.1X46-D65.4-domestic.tar no-validate '
+Nov 16 2020 22:30:51 srx-test mgd[7291]: UI_CHILD_EXITED: Child exited: PID 7626, status 1, command '/usr/libexec/ui/package'
+Nov 16 2020 22:30:51 srx-test mgd[7291]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/package', PID 7626, status 0x100
+Nov 16 2020 22:30:51 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 22:30:51 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Management Information Base II process', pid 1335, signal 30, status 0 with notification errors enabled
+Nov 16 2020 22:31:13 srx-test checklogin[7708]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 22:31:13 srx-test checklogin[7708]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 22:31:18 srx-test checklogin[7712]: WEB_AUTH_FAIL: Unable to authenticate httpd client (username root)
+Nov 16 2020 22:31:18 srx-test checklogin[7712]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 22:31:18 srx-test checklogin[7714]: WEB_AUTH_SUCCESS: Authenticated httpd client (username marybaker)
+Nov 16 2020 22:31:18 srx-test checklogin[7714]: warning: can't get client address: Bad file descriptor
+Nov 16 2020 22:31:18 srx-test mgd[7709]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 22:31:18 srx-test mgd[7709]: UI_CHILD_START: Starting child '/usr/libexec/ui/show-users'
+Nov 16 2020 22:31:18 srx-test mgd[7709]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 22:31:18 srx-test mgd[7709]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 22:31:18 srx-test mgd[7709]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-system-users-information'
+Nov 16 2020 22:31:18 srx-test mgd[7709]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7709], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 22:31:20 srx-test mgd[7709]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/show-users', PID 7715, status 0
+Nov 16 2020 22:31:21 srx-test mgd[7709]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-cluster-status'
+Nov 16 2020 22:31:21 srx-test mgd[7709]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-information'
+Nov 16 2020 22:31:21 srx-test mgd[7709]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'request-web-management-login user=marybaker session-id=05310b6a734ea694eca619f1302d25c9530c348e from=10.79.36.244'
+Nov 16 2020 22:31:24 srx-test mgd[7709]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_CHILD_START: Starting child '/sbin/shutdown'
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_CHILD_STATUS: Cleanup child '/sbin/shutdown', PID 7725, status 0
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-reboot-information'
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-installation-status'
+Nov 16 2020 22:31:32 srx-test mgd[7723]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7723], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 22:31:33 srx-test mgd[7723]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_CHILD_START: Starting child '/sbin/shutdown'
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_CHILD_STATUS: Cleanup child '/sbin/shutdown', PID 7728, status 0
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-reboot-information'
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-installation-status'
+Nov 16 2020 22:31:43 srx-test mgd[7726]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7726], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 22:31:44 srx-test mgd[7726]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 22:32:14 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:32:14 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:32:21 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:32:21 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:32:31 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:32:31 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:32:31 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:32:31 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:32:31 srx-test init: l2cpd-service (PID 7732) started
+Nov 16 2020 22:32:37 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run request system software add junos-srxsme-12.1X46-D65.4-domestic.tar '
+Nov 16 2020 22:32:38 srx-test mgd[7291]: UI_CHILD_START: Starting child '/usr/libexec/ui/package'
+Nov 16 2020 22:32:39 srx-test mgd[7291]: /usr/libexec/ui/package -X update /cf/var/home/marybaker/junos-srxsme-12.1X46-D65.4-domestic.tar
+Nov 16 2020 22:32:45 srx-test mgd[7291]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/package', PID 7734, status 0x2
+Nov 16 2020 22:32:45 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 22:32:45 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Management Information Base II process', pid 1335, signal 30, status 0 with notification errors enabled
+Nov 16 2020 22:33:00 srx-test srx-test L2ALM: trying master connection, status 61, attempt 85000 
+Nov 16 2020 22:33:07 srx-test init: l2cpd-service (PID 7732) exited with status=0 Normal Exit
+Nov 16 2020 22:33:07 srx-test init: l2cpd-service (PID 7735) started
+Nov 16 2020 22:33:07 srx-test l2cp[7732]: JTASK_START: Start l2cpd[7732] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:33:08 srx-test init: l2cpd-service (PID 7735) exited with status=0 Normal Exit
+Nov 16 2020 22:33:08 srx-test init: l2cpd-service (PID 7736) started
+Nov 16 2020 22:33:08 srx-test l2cp[7735]: JTASK_START: Start l2cpd[7735] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:33:13 srx-test init: l2cpd-service (PID 7736) exited with status=0 Normal Exit
+Nov 16 2020 22:33:13 srx-test init: l2cpd-service (PID 7737) started
+Nov 16 2020 22:33:13 srx-test l2cp[7736]: JTASK_START: Start l2cpd[7736] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:33:19 srx-test init: l2cpd-service (PID 7737) exited with status=0 Normal Exit
+Nov 16 2020 22:33:19 srx-test init: l2cpd-service (PID 7738) started
+Nov 16 2020 22:33:19 srx-test l2cp[7737]: JTASK_START: Start l2cpd[7737] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:33:20 srx-test inetd[1338]: /usr/sbin/sshd[6997]: exited, status 255
+Nov 16 2020 22:33:24 srx-test init: l2cpd-service (PID 7738) exited with status=0 Normal Exit
+Nov 16 2020 22:33:24 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:33:24 srx-test l2cp[7738]: JTASK_START: Start l2cpd[7738] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:33:26 srx-test mgd[7740]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:33:26 srx-test mgd[7740]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:33:26 srx-test mgd[7740]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7740], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:33:26 srx-test mgd[7740]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:33:26 srx-test mgd[7741]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:33:26 srx-test mgd[7741]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:33:26 srx-test mgd[7741]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7741], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:33:26 srx-test mgd[7741]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:33:28 srx-test mgd[7001]: UI_DBASE_LOGOUT_EVENT: User 'marybaker' exiting configuration mode
+Nov 16 2020 22:33:28 srx-test mgd[7001]: UI_LOGOUT_EVENT: User 'marybaker' logout
+Nov 16 2020 22:33:46 srx-test /kernel: pid 4980 (httpd), uid 65534 inumber 11197 on /cf/var: filesystem full
+Nov 16 2020 22:34:41 srx-test /kernel: pid 4980 (httpd), uid 65534 inumber 11198 on /cf/var: filesystem full
+Nov 16 2020 22:34:49 srx-test mgd[7745]: UI_AUTH_EVENT: Authenticated user 'marybaker' at permission level 'j-super-user'
+Nov 16 2020 22:34:49 srx-test mgd[7745]: UI_CHILD_START: Starting child '/sbin/shutdown'
+Nov 16 2020 22:34:49 srx-test mgd[7745]: UI_CMDLINE_READ_LINE: User '(unauthenticated user)', command 'xml-pass-thru-mode '
+Nov 16 2020 22:34:49 srx-test mgd[7745]: UI_JUNOSCRIPT_CMD: User '(unauthenticated user)' used JUNOScript client to run command 'request-authentication user=marybaker'
+Nov 16 2020 22:34:49 srx-test mgd[7745]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-reboot-information'
+Nov 16 2020 22:34:49 srx-test mgd[7745]: UI_LOGIN_EVENT: User 'marybaker' login, class 'j-super-user' [7745], ssh-connection '', client-mode 'junoscript'
+Nov 16 2020 22:34:50 srx-test mgd[7745]: UI_CHILD_STATUS: Cleanup child '/sbin/shutdown', PID 7747, status 0
+Nov 16 2020 22:34:50 srx-test mgd[7745]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-chassis-inventory'
+Nov 16 2020 22:34:50 srx-test mgd[7745]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-configuration database="candidate"'
+Nov 16 2020 22:34:50 srx-test mgd[7745]: UI_JUNOSCRIPT_CMD: User 'marybaker' used JUNOScript client to run command 'get-software-installation-status'
+Nov 16 2020 22:34:58 srx-test inetd[1338]: /usr/sbin/sshd[6647]: exited, status 255
+Nov 16 2020 22:34:58 srx-test mgd[6665]: UI_DBASE_LOGOUT_EVENT: User 'root' exiting configuration mode
+Nov 16 2020 22:34:58 srx-test mgd[6665]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:35:00 srx-test cron[7755]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:37:29 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run show chassis environment '
+Nov 16 2020 22:37:38 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run show chassis routing-engine '
+Nov 16 2020 22:37:53 srx-test mgd[7291]: /usr/libexec/ui/package -X update /cf/var/home/marybaker/junos-srxsme-12.1X46-D65.4-domestic.tar
+Nov 16 2020 22:37:53 srx-test mgd[7291]: UI_CHILD_START: Starting child '/usr/libexec/ui/package'
+Nov 16 2020 22:37:53 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run request system software add junos-srxsme-12.1X46-D65.4-domestic.tar '
+Nov 16 2020 22:37:54 srx-test /kernel: KERNEL_MEMORY_CRITICAL: System low on free memory, notifying init (#12).
+Nov 16 2020 22:37:54 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:37:54 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:37:55 srx-test mgd[7291]: UI_CHILD_EXITED: Child exited: PID 7769, status 1, command '/usr/libexec/ui/package'
+Nov 16 2020 22:37:55 srx-test mgd[7291]: UI_CHILD_STATUS: Cleanup child '/usr/libexec/ui/package', PID 7769, status 0x100
+Nov 16 2020 22:37:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Alarm control process', pid 1331, signal 30, status 0 with notification errors enabled
+Nov 16 2020 22:37:56 srx-test mgd[7291]: UI_COMMIT_PROGRESS: Commit operation in progress: signaling 'Management Information Base II process', pid 1335, signal 30, status 0 with notification errors enabled
+Nov 16 2020 22:38:03 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run show version '
+Nov 16 2020 22:38:05 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:38:05 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:38:05 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:38:05 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:38:05 srx-test init: l2cpd-service (PID 7849) started
+Nov 16 2020 22:38:05 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:38:05 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:38:05 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:38:06 srx-test init: l2cpd-service (PID 7849) exited with status=0 Normal Exit
+Nov 16 2020 22:38:06 srx-test init: l2cpd-service (PID 7851) started
+Nov 16 2020 22:38:06 srx-test l2cp[7849]: JTASK_START: Start l2cpd[7849] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:38:06 srx-test mgd[7852]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:38:06 srx-test mgd[7852]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:38:06 srx-test mgd[7852]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7852], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:38:06 srx-test mgd[7852]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:38:11 srx-test init: l2cpd-service (PID 7851) exited with status=0 Normal Exit
+Nov 16 2020 22:38:11 srx-test init: l2cpd-service (PID 7853) started
+Nov 16 2020 22:38:11 srx-test l2cp[7851]: JTASK_START: Start l2cpd[7851] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:38:15 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:38:15 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:38:15 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:38:15 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:38:17 srx-test init: l2cpd-service (PID 7853) exited with status=0 Normal Exit
+Nov 16 2020 22:38:17 srx-test init: l2cpd-service (PID 7855) started
+Nov 16 2020 22:38:17 srx-test l2cp[7853]: JTASK_START: Start l2cpd[7853] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:38:22 srx-test init: l2cpd-service (PID 7855) exited with status=0 Normal Exit
+Nov 16 2020 22:38:22 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:38:22 srx-test l2cp[7855]: JTASK_START: Start l2cpd[7855] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:38:23 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:38:23 srx-test mgd[7857]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:38:23 srx-test mgd[7857]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:38:23 srx-test mgd[7857]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7857], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:38:23 srx-test mgd[7857]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:38:23 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:38:33 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:38:33 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:38:33 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:38:33 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:38:33 srx-test init: l2cpd-service (PID 7859) started
+Nov 16 2020 22:38:33 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:38:33 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:38:33 srx-test mgd[7861]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:38:33 srx-test mgd[7861]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:38:33 srx-test mgd[7861]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7861], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:38:33 srx-test mgd[7861]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:38:33 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:38:38 srx-test init: l2cpd-service (PID 7859) exited with status=0 Normal Exit
+Nov 16 2020 22:38:38 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:38:38 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:38:38 srx-test l2cp[7859]: JTASK_START: Start l2cpd[7859] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:38:38 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:38:39 srx-test mgd[7863]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:38:39 srx-test mgd[7863]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:38:39 srx-test mgd[7863]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7863], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:38:39 srx-test mgd[7863]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:38:49 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:38:49 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:38:49 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:38:49 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:38:49 srx-test init: l2cpd-service (PID 7865) started
+Nov 16 2020 22:38:49 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:38:49 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:38:49 srx-test mgd[7867]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:38:49 srx-test mgd[7867]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:38:49 srx-test mgd[7867]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7867], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:38:49 srx-test mgd[7867]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:38:49 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:38:54 srx-test init: l2cpd-service (PID 7865) exited with status=0 Normal Exit
+Nov 16 2020 22:38:54 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:38:54 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:38:54 srx-test l2cp[7865]: JTASK_START: Start l2cpd[7865] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:38:54 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:38:55 srx-test mgd[7869]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:38:55 srx-test mgd[7869]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:38:55 srx-test mgd[7869]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7869], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:38:55 srx-test mgd[7869]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:38:59 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:38:59 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:38:59 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:38:59 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:38:59 srx-test init: l2cpd-service (PID 7871) started
+Nov 16 2020 22:39:00 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:39:00 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:39:00 srx-test mgd[7873]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:39:00 srx-test mgd[7873]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:39:00 srx-test mgd[7873]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7873], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:39:00 srx-test mgd[7873]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:39:00 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:39:04 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:39:04 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:39:05 srx-test init: l2cpd-service (PID 7871) exited with status=0 Normal Exit
+Nov 16 2020 22:39:05 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:39:05 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:39:05 srx-test l2cp[7871]: JTASK_START: Start l2cpd[7871] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:39:05 srx-test mgd[7875]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:39:05 srx-test mgd[7875]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:39:05 srx-test mgd[7875]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7875], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:39:05 srx-test mgd[7875]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:39:05 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:39:15 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:39:15 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:39:15 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:39:15 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:39:15 srx-test init: l2cpd-service (PID 7877) started
+Nov 16 2020 22:39:16 srx-test init: low_mem_signal_processes: send signal 16 to  l2cpd-service
+Nov 16 2020 22:39:16 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:39:16 srx-test mgd[7879]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:39:16 srx-test mgd[7879]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:39:16 srx-test mgd[7879]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7879], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:39:16 srx-test mgd[7879]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:39:16 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:39:20 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:39:20 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:39:21 srx-test init: l2cpd-service (PID 7877) exited with status=0 Normal Exit
+Nov 16 2020 22:39:21 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:39:21 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:39:21 srx-test l2cp[7877]: JTASK_START: Start l2cpd[7877] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:39:21 srx-test mgd[7881]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:39:21 srx-test mgd[7881]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:39:21 srx-test mgd[7881]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7881], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:39:21 srx-test mgd[7881]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:39:21 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:39:31 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:39:31 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:39:31 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:39:31 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:39:31 srx-test init: l2cpd-service (PID 7883) started
+Nov 16 2020 22:39:32 srx-test mgd[7885]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:39:32 srx-test mgd[7885]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:39:32 srx-test mgd[7885]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7885], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:39:32 srx-test mgd[7885]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:39:37 srx-test init: l2cpd-service (PID 7883) exited with status=0 Normal Exit
+Nov 16 2020 22:39:37 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:39:37 srx-test l2cp[7883]: JTASK_START: Start l2cpd[7883] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:39:37 srx-test mgd[7887]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:39:37 srx-test mgd[7887]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:39:37 srx-test mgd[7887]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [7887], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:39:37 srx-test mgd[7887]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:40:00 srx-test cron[7889]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:41:10 srx-test ftpd[7891]: connection from 10.79.36.244 (10.79.36.244)
+Nov 16 2020 22:41:11 srx-test ftpd[7891]: FTP LOGIN FROM 10.79.36.244 as marybaker
+Nov 16 2020 22:41:20 srx-test ftpd[7893]: FTP LOGIN FROM 10.79.36.244 as marybaker
+Nov 16 2020 22:41:20 srx-test ftpd[7893]: connection from 10.79.36.244 (10.79.36.244)
+Nov 16 2020 22:41:20 srx-test ftpd[7894]: connection from 10.79.36.244 (10.79.36.244)
+Nov 16 2020 22:41:22 srx-test ftpd[7894]: FTP LOGIN FROM 10.79.36.244 as marybaker
+Nov 16 2020 22:43:02 srx-test mgd[7291]: /usr/libexec/ui/package -X update -reboot -no-validate /cf/var/home/marybaker/junos-srxsme-12.1X46-D65.4-domestic.tgz
+Nov 16 2020 22:43:02 srx-test mgd[7291]: UI_CHILD_START: Starting child '/usr/libexec/ui/package'
+Nov 16 2020 22:43:02 srx-test mgd[7291]: UI_CMDLINE_READ_LINE: User 'marybaker', command 'run request system software add junos-srxsme-12.1X46-D65.4-domestic.tgz no-validate reboot '
+Nov 16 2020 22:43:36 srx-test /kernel: KERNEL_MEMORY_CRITICAL: System low on free memory, notifying init (#22).
+Nov 16 2020 22:43:36 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:43:36 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:43:46 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:43:46 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:43:46 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:43:46 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:43:46 srx-test init: l2cpd-service (PID 8071) started
+Nov 16 2020 22:44:22 srx-test l2cp[8071]: JTASK_START: Start l2cpd[8071] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:44:23 srx-test init: l2cpd-service (PID 8071) exited with status=0 Normal Exit
+Nov 16 2020 22:44:23 srx-test init: l2cpd-service (PID 8073) started
+Nov 16 2020 22:44:24 srx-test init: l2cpd-service (PID 8073) exited with status=0 Normal Exit
+Nov 16 2020 22:44:24 srx-test init: l2cpd-service (PID 8074) started
+Nov 16 2020 22:44:24 srx-test l2cp[8073]: JTASK_START: Start l2cpd[8073] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:44:30 srx-test init: l2cpd-service (PID 8074) exited with status=0 Normal Exit
+Nov 16 2020 22:44:30 srx-test init: l2cpd-service (PID 8075) started
+Nov 16 2020 22:44:30 srx-test l2cp[8074]: JTASK_START: Start l2cpd[8074] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:44:35 srx-test init: l2cpd-service (PID 8075) exited with status=0 Normal Exit
+Nov 16 2020 22:44:35 srx-test init: l2cpd-service (PID 8076) started
+Nov 16 2020 22:44:35 srx-test l2cp[8075]: JTASK_START: Start l2cpd[8075] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:44:41 srx-test init: l2cpd-service (PID 8076) exited with status=0 Normal Exit
+Nov 16 2020 22:44:41 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:44:41 srx-test l2cp[8076]: JTASK_START: Start l2cpd[8076] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:44:42 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:44:42 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:44:48 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:44:48 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:44:56 srx-test mgd[8078]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:44:57 srx-test mgd[8078]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [8078], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:44:58 srx-test mgd[8078]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:44:58 srx-test mgd[8078]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:44:58 srx-test mgd[8079]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:44:58 srx-test mgd[8079]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:44:58 srx-test mgd[8079]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [8079], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:45:01 srx-test cron[8083]: (root) CMD (newsyslog)
+Nov 16 2020 22:45:01 srx-test cron[8084]: (root) CMD (   /usr/libexec/atrun)
+Nov 16 2020 22:45:03 srx-test mgd[8079]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:45:05 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:45:05 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:45:05 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:45:05 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:45:05 srx-test init: l2cpd-service (PID 8085) started
+Nov 16 2020 22:45:11 srx-test init: l2cpd-service (PID 8085) exited with status=0 Normal Exit
+Nov 16 2020 22:45:11 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:45:11 srx-test l2cp[8085]: JTASK_START: Start l2cpd[8085] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:45:11 srx-test mgd[8089]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:45:11 srx-test mgd[8089]: UI_CMDLINE_READ_LINE: User 'root', command 'clear alarm 0 '
+Nov 16 2020 22:45:11 srx-test mgd[8089]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [8089], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:45:11 srx-test mgd[8089]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:45:13 srx-test mgd[8091]: UI_AUTH_EVENT: Authenticated user 'root' at permission level 'super-user'
+Nov 16 2020 22:45:13 srx-test mgd[8091]: UI_CMDLINE_READ_LINE: User 'root', command 'set alarm red alarm-id 0small-msg '
+Nov 16 2020 22:45:13 srx-test mgd[8091]: UI_LOGIN_EVENT: User 'root' login, class 'super-user' [8091], ssh-connection '', client-mode 'cli'
+Nov 16 2020 22:45:13 srx-test mgd[8091]: UI_LOGOUT_EVENT: User 'root' logout
+Nov 16 2020 22:45:48 srx-test init: low_mem_signal_processes: send signal 16 to  routing
+Nov 16 2020 22:45:49 srx-test rpd[1336]: Processing low memory signal
+Nov 16 2020 22:45:58 srx-test init: can not access /usr/sbin/hostname-cached: No such file or directory
+Nov 16 2020 22:45:58 srx-test init: can not access /usr/sbin/ipmid: No such file or directory
+Nov 16 2020 22:45:58 srx-test init: hostname-caching-process (PID 0) started
+Nov 16 2020 22:45:58 srx-test init: ipmi (PID 0) started
+Nov 16 2020 22:45:58 srx-test init: l2cpd-service (PID 8093) started
+Nov 16 2020 22:46:37 srx-test l2cp[8093]: JTASK_START: Start l2cpd[8093] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:46:38 srx-test init: l2cpd-service (PID 8093) exited with status=0 Normal Exit
+Nov 16 2020 22:46:38 srx-test init: l2cpd-service (PID 8095) exited with status=0 Normal Exit
+Nov 16 2020 22:46:38 srx-test init: l2cpd-service (PID 8095) started
+Nov 16 2020 22:46:38 srx-test init: l2cpd-service (PID 8096) started
+Nov 16 2020 22:46:38 srx-test l2cp[8095]: JTASK_START: Start l2cpd[8095] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:46:44 srx-test init: l2cpd-service (PID 8096) exited with status=0 Normal Exit
+Nov 16 2020 22:46:44 srx-test init: l2cpd-service (PID 8097) started
+Nov 16 2020 22:46:44 srx-test l2cp[8096]: JTASK_START: Start l2cpd[8096] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:46:49 srx-test init: l2cpd-service (PID 8097) exited with status=0 Normal Exit
+Nov 16 2020 22:46:49 srx-test init: l2cpd-service (PID 8098) started
+Nov 16 2020 22:46:49 srx-test l2cp[8097]: JTASK_START: Start l2cpd[8097] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
+Nov 16 2020 22:46:54 srx-test init: l2cpd-service (PID 8098) exited with status=0 Normal Exit
+Nov 16 2020 22:46:54 srx-test init: l2cpd-service is thrashing, not restarted
+Nov 16 2020 22:46:54 srx-test l2cp[8098]: JTASK_START: Start l2cpd[8098] version 12.1X44-D35.5 built 2014-05-19 23:07:03 UTC
