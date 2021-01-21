@@ -24,10 +24,11 @@ get_entity()
 {
   entity=$1
   type=$2
+  WorkshopUser_COMPARTMENTID=$3
 
   cmd="oci log-analytics entity list    \
         --namespace-name $NAMESPACE     \
-        --compartment-id $COMPARTMENTID \
+        --compartment-id $WorkshopUser_COMPARTMENTID \
         --all                           \
         | jq -r '.data.items[] | select (.name==\"$entity\" and .\"entity-type-internal-name\"==\"$type\" and .\"lifecycle-state\"==\"ACTIVE\") | .id' \
         | tail -1 "
@@ -39,8 +40,9 @@ create_entity()
 {
   entity=$1
   type=$2
+  WorkshopUser_COMPARTMENTID=$3
 
-  get_entity $entity $type
+  get_entity $entity $type $WorkshopUser_COMPARTMENTID
   if [ ! -z $ENTITYID ]
     then
       echo "  Entity $entity already exists"
@@ -49,7 +51,7 @@ create_entity()
 
   cmd="oci log-analytics entity create \
       --namespace-name $NAMESPACE     \
-      --compartment-id $COMPARTMENTID \
+      --compartment-id $WorkshopUser_COMPARTMENTID \
       --name $entity                  \
       --entity-type-name $type"
   cmd_out=$($cmd)
@@ -110,24 +112,25 @@ upload_pattern()
 
 upload_files()
 {
+  WorkshopUser_COMPARTMENTID=$1
   echo "Uploading Logs for user $WorkshopUser"
   sleep 10
-  create_entity db1-$WorkshopUser omc_oracle_db_instance
+  create_entity db1-$WorkshopUser omc_oracle_db_instance $WorkshopUser_COMPARTMENTID
   upload_pattern 'logs/db/*' 'Database Alert Logs' $ENTITYID
   echo
 
-  create_entity dbhost1.oracle.com-$WorkshopUser omc_host_linux
+  create_entity dbhost1.oracle.com-$WorkshopUser omc_host_linux $WorkshopUser_COMPARTMENTID
   upload_pattern 'logs/syslog/*' 'Linux Syslog Logs' $ENTITYID
   echo
 
-  create_entity bigip-ltm-dmz1.oracle.com-$WorkshopUser omc_host_linux
+  create_entity bigip-ltm-dmz1.oracle.com-$WorkshopUser omc_host_linux $WorkshopUser_COMPARTMENTID
   upload_pattern 'logs/F5/*' 'F5 Big IP Logs' $ENTITYID
   echo
 
 # create_entity cisco-asa1.oracle.com omc_host_linux
 # upload_pattern 'logs/cisco-asa/*' 'Cisco ASA Logs' $ENTITYID
 
-  create_entity srx-test.oracle.com-$WorkshopUser omc_host_linux
+  create_entity srx-test.oracle.com-$WorkshopUser omc_host_linux $WorkshopUser_COMPARTMENTID
   upload_pattern 'logs/juniper/*' 'Juniper SRX Syslog Logs' $ENTITYID
   echo
 
@@ -135,7 +138,7 @@ upload_files()
   upload_pattern 'logs/oci-vcn-flow/*.zip' 'OCI VCN Flow Logs'
   echo
 
-  create_entity apigw1.oracle.com-$WorkshopUser oci_api_gateway
+  create_entity apigw1.oracle.com-$WorkshopUser oci_api_gateway $WorkshopUser_COMPARTMENTID
   upload_pattern 'logs/oci-api-gw/*access.zip' 'OCI API Gateway Access Logs'     $ENTITYID
   upload_pattern 'logs/oci-api-gw/*exec.zip'   'OCI API Gateway Execution Logs'  $ENTITYID
 }

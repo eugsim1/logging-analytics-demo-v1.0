@@ -29,7 +29,7 @@ export WorkshopUser=$1
   fi
 
 
-export NAME="LoggingAnalytics"
+export NAME="LoggingAnalytics" ### root compartment for the labs
 export COMPARTMENT_NAME=$NAME
 
 
@@ -44,11 +44,10 @@ export COMPARTMENTID=`oci iam compartment list \
 
 export GROUP_NAME="Logging-Analytics-SuperAdmins"
 export POLICY_NAME="LoggingAnalytics"
-export LOGGROUP_NAME="$NAME-LogGroup"
-
+export LOGGROUP_NAME="$NAME-LogGroup-$WorkshopUser"
 export UPLOAD_NAME=$NAME
 
-setup_compartment $COMPARTMENT_NAME
+setup_compartment $COMPARTMENT_NAME $WorkshopUser $COMPARTMENTID
 setup_iam_group $GROUP_NAME
 setup_policies $POLICY_NAME
 
@@ -61,8 +60,16 @@ echo "UPLOAD_NAME=>$UPLOAD_NAME"  >> installation_steps.txt
 
 
 onboard
-setup_loggroupid $LOGGROUP_NAME
+
+export WorkshopUser_COMPARTMENTID=`oci iam compartment list \
+--access-level ACCESSIBLE \
+--name $WorkshopUser \
+--lifecycle-state ACTIVE \
+--compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
+--compartment-id-in-subtree true | jq -r .data[].id`
+
+setup_loggroupid $LOGGROUP_NAME $WorkshopUser_COMPARTMENTID
 
 update_timestamps
 zip_files
-upload_files
+upload_files $WorkshopUser_COMPARTMENTID

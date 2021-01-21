@@ -1,77 +1,75 @@
 source "scripts/common.sh"
 
+###setup_compartment $COMPARTMENT_NAME $WorkshopUser
 setup_compartment()
 {
   name=$1
-  echo "Checking to see if compartment $name already exists"
+  WorkshopUser=$2
+  COMPARTMENTID=$3
+  
+  echo "Checking to see if compartment $WorkshopUser under $name  already exists"
   compartmentcheck_out=$(oci iam compartment list \
 --access-level ACCESSIBLE \
---name $COMPARTMENT_NAME \
+--name $WorkshopUser \
 --lifecycle-state ACTIVE \
 --compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
 --compartment-id-in-subtree true | jq -r .data[].id)
 
   if [ -z $compartmentcheck_out ]
   then
-     echo "  Does not exist yet, create compartment"
-     compartment_out=$(oci iam compartment create --compartment-id $OCI_TENANCY \
-                        --name "$name" \
+     echo "Compartment $WorkshopUser Does not exist yet, create compartment"
+     compartment_out=$(oci iam compartment create --compartment-id $COMPARTMENTID \
+                        --name "$WorkshopUser" \
                         --description "Compartment for Logging Analytics demo resources")
-     COMPARTMENTID=$(getocid "$compartment_out")
+     WorkshopUser_COMPARTMENTID=$(getocid "$compartment_out")
   else
-     echo "  Already exists"
-     COMPARTMENTID=$compartmentcheck_out
+     echo "Compartment  $WorkshopUser Already exists"
+     WorkshopUser_COMPARTMENTID=$compartmentcheck_out
   fi
 
-  if [ -z $COMPARTMENTID ]
+  if [ -z $WorkshopUser_COMPARTMENTID ]
   then
-     echo "  Failed to get OCID - exiting"
+     echo "$WorkshopUser  Failed to get OCID - exiting"
      exit 1
   else
-     echo "  Compartment OCID=$COMPARTMENTID" | tee -a setup.properties
+     echo "Compartment $WorkshopUser OCID=$WorkshopUser_COMPARTMENTID" | tee -a setup.properties
   fi
 }
 
 setup_loggroupid()
 {
   name=$1
+  WorkshopUser_COMPARTMENTID=$2
   
-  COMPARTMENTID=$(oci iam compartment list \
---access-level ACCESSIBLE \
---name $COMPARTMENT_NAME \
---lifecycle-state ACTIVE \
---compartment-id ocid1.tenancy.oc1..aaaaaaaanpuxsacx2rn22ycwc7ugp3sqzfvfhvyrrkmd7eanmvqd6bg7innq \
---compartment-id-in-subtree true | jq -r .data[].id)
-
- echo "compartmentId from setup_logggrouip => $COMPARTMENTID"
+ echo "compartmentId from setup_log group => $WorkshopUser_COMPARTMENTID"
 
   echo "Checking to see if log group $name already exists"
   loggroupcheck_out=$(oci log-analytics log-group list \
                        --namespace-name $NAMESPACE \
-                       --compartment-id $COMPARTMENTID \
+                       --compartment-id $WorkshopUser_COMPARTMENTID \
                       | jq -r '.data.items[] | select (."display-name"=="'"$name"'") | .id')
 
 
   if [ -z $loggroupcheck_out ]
   then
-    echo "  Does not exist yet, create log group"
+    echo "log group $name Does not exist yet, create log group"
     loggroup_out=$(oci log-analytics log-group create \
-                    --compartment-id $COMPARTMENTID   \
+                    --compartment-id $WorkshopUser_COMPARTMENTID   \
                     --display-name "$name"   \
                     --namespace-name $NAMESPACE       \
                     --description "Store all logs uploaded for the Logging Analytics demo setup")
     LOGGROUPID=$(getocid "$loggroup_out")
   else
-    echo "  Already exists"
+    echo "log group $name Already exists"
     LOGGROUPID=$loggroupcheck_out
   fi
 
   if [ -z $LOGGROUPID ]
   then
-     echo "  Failed to get OCID - exiting"
+     echo "  Failed to get $name OCID - exiting"
      exit 1
   else
-     echo "  Log Group OCID=$LOGGROUPID" |tee -a setup.properties
+     echo "Log Group $name OCID=$LOGGROUPID" |tee -a setup.properties
   fi
 }
 

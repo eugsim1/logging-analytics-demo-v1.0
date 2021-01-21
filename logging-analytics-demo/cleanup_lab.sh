@@ -1,3 +1,4 @@
+#!/bin/bash
 export NAME="LoggingAnalytics"
 export COMPARTMENT_NAME=$NAME
 export GROUP_NAME="Logging-Analytics-SuperAdmins"
@@ -43,19 +44,18 @@ cat entity_ids.txt >> cleanup.txt
 		### delete the entities
 		echo "delete the entities of the compartment"
 		input="entity_ids.txt"
-		rm -rf delete_entities.sh
 		while IFS= read -r line
-		do
-		 cat < 'EOT' >> delete_entities.sh
+		do   
+		     echo "delete entity $line"
 		 	 oci log-analytics entity delete \
 		     --entity-id $line \
 		     --namespace-name $NAMESPACE \
 		     --force
-		'EOT'
+
 		done < "$input"
-		cat delete_entities.sh
-		chmod u+x delete_entities.sh 
-		./delete_entities.sh	 
+
+		## chmod u+x delete_entities.sh 
+		## ./delete_entities.sh	 
 	fi
 
 
@@ -117,7 +117,7 @@ echo "$DATE: LogGroup list=>$LOGGROUPID" >>   cleanup.txt
 # oci log-analytics namespace offboard \
 #--namespace-name $NAMESPACE
 
-rm -rf entity_ids.txt delete_entities.sh
+rm -rf entity_ids.txt  
 
 DATE=$(date +%d-%m-%Y"-"%H:%M:%S)
 echo "$DATE: End of cleanup " >>   cleanup.txt
