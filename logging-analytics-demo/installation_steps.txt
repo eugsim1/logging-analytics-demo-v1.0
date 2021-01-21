@@ -1,0 +1,7 @@
+Running demo setup script: Jan-21-2021
+NAME=>logging-analytics-demo
+COMPARTMENT_NAME=>logging-analytics-demo
+GROUP_NAME=> Logging-Analytics-SuperAdmins
+POLICY_NAME=>Logging-Analytics-Demo-Policy
+LOGGROUP_NAME=>logging-analytics-demo-LogGroup
+UPLOAD_NAME=>logging-analytics-demo
