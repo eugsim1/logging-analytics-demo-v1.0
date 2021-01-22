@@ -1,3 +1,5 @@
+#### eugene simos 2021
+####
 source "scripts/common.sh"
 
 ###setup_compartment $COMPARTMENT_NAME $WorkshopUser
