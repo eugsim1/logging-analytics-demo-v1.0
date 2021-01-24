@@ -46,7 +46,7 @@ setup_loggroupid()
   name=$1
   WorkshopUser_COMPARTMENTID=$2
   
- echo "compartmentId from setup_log group => $WorkshopUser_COMPARTMENTID"
+ echo "compartmentId  $WorkshopUser_COMPARTMENTID for  setup_log group => $name"
 
   echo "Checking to see if log group $name already exists"
   loggroupcheck_out=$(oci log-analytics log-group list \
