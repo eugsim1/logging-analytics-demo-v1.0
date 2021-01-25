@@ -95,7 +95,7 @@ upload()
         --opc-meta-loggrpid $LOGGROUPID          \
         --file $(echo \"$file\") $entity_string"
 
-  echo "  Uploading $filename"
+  echo "  Uploading $filename in logsource $logsource with upload name $UPLOAD_NAME with loggrpid $LOGGROUPID with entity $entity_string"
   eval "$cmd > /dev/null"
 }
 
@@ -116,14 +116,17 @@ upload_files()
   echo "Uploading Logs for user $WorkshopUser"
   sleep 10
   create_entity db1-$WorkshopUser omc_oracle_db_instance $WorkshopUser_COMPARTMENTID
+  echo "uploading logs/db with entity $ENTITYID"
   upload_pattern 'logs/db/*' 'Database Alert Logs' $ENTITYID
   echo
 
   create_entity dbhost1.oracle.com-$WorkshopUser omc_host_linux $WorkshopUser_COMPARTMENTID
+  echo "uploading logs/syslog/ with entity $ENTITYID"
   upload_pattern 'logs/syslog/*' 'Linux Syslog Logs' $ENTITYID
   echo
 
   create_entity bigip-ltm-dmz1.oracle.com-$WorkshopUser omc_host_linux $WorkshopUser_COMPARTMENTID
+  echo "uploading logs/F5/ with entity $ENTITYID"
   upload_pattern 'logs/F5/*' 'F5 Big IP Logs' $ENTITYID
   echo
 
@@ -131,14 +134,18 @@ upload_files()
 # upload_pattern 'logs/cisco-asa/*' 'Cisco ASA Logs' $ENTITYID
 
   create_entity srx-test.oracle.com-$WorkshopUser omc_host_linux $WorkshopUser_COMPARTMENTID
+  echo "uploading logs/juniper/ with entity $ENTITYID"
   upload_pattern 'logs/juniper/*' 'Juniper SRX Syslog Logs' $ENTITYID
   echo
 
   ENTITYID=""
+  echo "uploading logs/oci-vcn-flow/ with entity $ENTITYID"
   upload_pattern 'logs/oci-vcn-flow/*.zip' 'OCI VCN Flow Logs'
   echo
 
   create_entity apigw1.oracle.com-$WorkshopUser oci_api_gateway $WorkshopUser_COMPARTMENTID
+  echo "uploading logs/oci-api-gw/*access with entity $ENTITYID"
   upload_pattern 'logs/oci-api-gw/*access.zip' 'OCI API Gateway Access Logs'     $ENTITYID
+  echo "uploading logs/oci-api-gw/*exec with entity $ENTITYID"
   upload_pattern 'logs/oci-api-gw/*exec.zip'   'OCI API Gateway Execution Logs'  $ENTITYID
 }
