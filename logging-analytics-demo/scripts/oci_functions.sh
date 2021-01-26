@@ -61,6 +61,7 @@ setup_loggroupid()
     loggroup_out=$(oci log-analytics log-group create \
                     --compartment-id $WorkshopUser_COMPARTMENTID   \
                     --display-name "$name"   \
+					--defined-tags file://defined_tags.json \
                     --namespace-name $NAMESPACE       \
                     --description "Store all logs uploaded for the Logging Analytics demo setup")
     LOGGROUPID=$(getocid "$loggroup_out")
