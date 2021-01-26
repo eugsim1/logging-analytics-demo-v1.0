@@ -51,7 +51,6 @@ setup_loggroupid()
   echo "Checking to see if log group $name already exists"
   loggroupcheck_out=$(oci log-analytics log-group list \
                        --namespace-name $NAMESPACE \
-					   --defined-tags file://defined_tags.json \
                        --compartment-id $WorkshopUser_COMPARTMENTID \
                       | jq -r '.data.items[] | select (."display-name"=="'"$name"'") | .id')
 
