@@ -51,6 +51,7 @@ create_entity()
 
   cmd="oci log-analytics entity create \
       --namespace-name $NAMESPACE     \
+	  --defined-tags file://defined_tags.json \
       --compartment-id $WorkshopUser_COMPARTMENTID \
       --name $entity                  \
       --entity-type-name $type"
