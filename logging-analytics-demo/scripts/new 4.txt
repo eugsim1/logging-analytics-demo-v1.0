@@ -1,0 +1,25 @@
+openssl genrsa -out api_key.pem 2048 
+openssl rsa -in api_key.pem -pubout -out api_key_public.pem
+openssl req -x509 -new -days 100000 -key api_key.pem -out certificate.pem
+### encrypt
+openssl smime -encrypt -aes-256-cbc -in input.txt -out enc-output.txt -outform DER certificate.pem
+### un-encrypt
+openssl smime -decrypt -in enc-output.txt -inform DER -out ecrypted_input.txt -inkey private.key
+
+cat<<EOF>encrypt_file.sh
+#!/bin/bash
+input_file=$1
+certificate=$2
+openssl  -encrypt -aes-256-cbc -in $1 -out enc 
+EOF
+
+cat<<EOF>decrypt_file.sh
+#!/bin/bash
+input_file=$1
+openssl smime -decrypt -in $1 -inform DER -out decr-$1 -inkey api_key.pem
+EOF
+
+./encrypt_file.sh README.md
+
+
+openssl smime -decrypt -in enc -inform DER -out decr  -inkey api_key.pem
