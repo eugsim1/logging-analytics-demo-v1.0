@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "cleanup v1"
 export WorkshopUser=$1
 
 
