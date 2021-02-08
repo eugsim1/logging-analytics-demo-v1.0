@@ -161,7 +161,7 @@ Explore the Storage the logs are taking 32 Mb
 
 From this point on you should follow the steps depicted on the tutorial :
 
-https://docs-uat.us.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction
+https://docs.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction
 
 On the next version of this Workshop you will install a managment Agent on a Linux Host, and you will activate VCN flow logs to a oracle oci bucket, then with the oci cli API you will upload them to Logging Analytics
 
