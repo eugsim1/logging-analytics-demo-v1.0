@@ -1,4 +1,4 @@
-OCI Logging Analytics Workshop for Oracle Internals
+OCI Logging Analytics Workshop 
 
 
 
