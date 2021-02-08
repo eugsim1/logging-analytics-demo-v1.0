@@ -6,28 +6,18 @@ Introduction and Scope
 
 the following document describes an introductory workshop to OCI Logging Analytics.
 
-The Workshop is based on the Oracle OCI Analytics Tutorial that you should get from [here](https://docs-uat.us.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction) 
+The Workshop is based on the Oracle OCI Analytics Tutorial that you should get from [here](hhttps://docs.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction) 
 
-This particular version is meant to be used only by Oracle internal teams, or Oracle authorized personnel ONLY
 
-Before to execute this workshop obtain the authorizations, and the associated credentials from our team (Luca, Eugene)
 
 Prerequsites
 
 In the beginning of the workshop , your instructor will give you your OCI account, and password.
-You should use this information to log into the **oractdemeasec** tenancy  by using the following procedure.
-The access is given to test only the Logging-Analytics part, do not create any other OCI resource during your labs time.
-
-At the end of your labs, please notify us ( eugene.simos@oracle.com ) that you have finished your learning path.
-
-If there are any issues with the setup or the lab content, contact eugene.simos@oracle.com
-
-
+You should use this information to log into the **oractdemeasec** tenancy  by using the below procedure.
 
 At this stage only LOCAL ACCOUNTS are created to allow you to access the lab environment 
 
 Do not share your credentials with other people , the utilization of the tenancy resources , are monitored, and any abnormal utilization of the tenancy resources will Trigger an invalidation of your local account.
-
 
 
 1. Log into the oractdemeasec tenancy
