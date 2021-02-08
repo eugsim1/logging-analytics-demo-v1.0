@@ -39,30 +39,30 @@ Do not share your credentials with other people , the utilization of the tenancy
 
    ![](images/oci_loggin4.jpg)
 
-   5. The Click again on the Workshops hyperlink
-   6. ![](images/oci_loggin5.jpg)
-   7.  the click again on the LogginAnalytics for INTERNALS  hyperlink
+5. Then Click again on the Workshops hyperlink
+    ![](images/oci_loggin5.jpg)
+    
+6.  Then click again on the LogginAnalytics 
       ![](images/log_an_internals.jpg)
    
    
    
-   8. In this list you will find the associated compartment for your account ( **this is the analytics000 , as your account is analytics000**)
+7. In this list you will find the associated compartment for your account ( **this is the analytics000 , as your account is analytics000**)
 
 
 ![](images/oci_loggin7.jpg)
 
-9. Click on the left side of the OCI console to the Logging Analytics  / Administration entry 
+8. Click on the left side of the OCI console to the Logging Analytics  / Administration entry 
 
 ![](images/oci_loggin8.jpg)
 
 
 
-10.  Under the Administration hyprelink, choose your compartment ( in your case is analytics000 )  an outlook of the analytics resources will appear :
-     BE SURE TO CHOOSE THE **LoggingAnalytics for INTERNALS**  for your configuration there might be other compartments in the tenancy but only the LogginAnalytics for internals is configured for your Labs 
-
+9.  Under the Administration hyprelink, choose your compartment ( in your case is analytics000 )  an outlook of the analytics resources will appear :
+ 
 ![](images/oci_loggin9.jpg)
 
-11. In the beginning of the labs you should see 0 entities, 0 Log Groups, 0 Uploads, and 1 saved search.
+10. In the beginning of the labs you should see 0 entities, 0 Log Groups, 0 Uploads, and 1 saved search.
 
      ![](images/oci_loggin10.jpg)
 
@@ -92,16 +92,17 @@ Click on maximize to open a wider terminal
 
 
 in the cloud shell execute the command:
+
 `git clone https://github.com/eugsim1/logging-analytics-demo-v1.0.git`
 
 ![](images/oci_loggin14.jpg)
 
 
-A directory is created logging-analytics-demo-v1.0 , then execute the command from your shell :
+A directory is created as logging-analytics-demo-v1.0 , execute the below command from your shell :
 
 `cd logging-analytics-demo-v1.0/logging-analytics-demo/`
 
-Execute the following command : ./setup.sh your_workshop_account in our case the command is :
+Execute the following command : ./setup.sh "your_workshop_account",  in our case the command is :
 
 `./setup.sh analytics000`
 
