@@ -1,16 +1,34 @@
-OCI Logging Analytics Workshop
+OCI Logging Analytics Workshop for Oracle Internals
 
 
 
 Introduction and Scope
 
 the following document describes an introductory workshop to OCI Logging Analytics.
+
 The Workshop is based on the Oracle OCI Analytics Tutorial that you should get from [here](https://docs-uat.us.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction) 
+
+This particular version is meant to be used only by Oracle internal teams, or Oracle authorized personnel ONLY
+
+Before to execute this workshop obtain the authorizations, and the associated credentials from our team (Luca, Eugene)
 
 Prerequsites
 
 In the beginning of the workshop , your instructor will give you your OCI account, and password.
-You should use this information to log into your tenancy by using the following procedure.
+You should use this information to log into the **oractdemeasec** tenancy  by using the following procedure.
+The access is given to test only the Logging-Analytics part, do not create any other OCI resource during your labs time.
+
+At the end of your labs, please notify us ( eugene.simos@oracle.com ) that you have finished your learning path.
+
+If there are any issues with the setup or the lab content, contact eugene.simos@oracle.com
+
+
+
+At this stage only LOCAL ACCOUNTS are created to allow you to access the lab environment 
+
+Do not share your credentials with other people , the utilization of the tenancy resources , are monitored, and any abnormal utilization of the tenancy resources will Trigger an invalidation of your local account.
+
+
 
 1. Log into the oractdemeasec tenancy
 
@@ -33,12 +51,12 @@ You should use this information to log into your tenancy by using the following 
 
    5. The Click again on the Workshops hyperlink
    6. ![](images/oci_loggin5.jpg)
-   7.  the click again on the LogginAnalytics  hyperlink
-      ![](images/oci_loggin6.jpg)
+   7.  the click again on the LogginAnalytics for INTERNALS  hyperlink
+      ![](images/log_an_internals.jpg)
    
    
    
-   8. In this list you will find the associated compartment for your account ( **this is the analtics000 , as your account is analytics000**)
+   8. In this list you will find the associated compartment for your account ( **this is the analytics000 , as your account is analytics000**)
 
 
 ![](images/oci_loggin7.jpg)
@@ -50,6 +68,7 @@ You should use this information to log into your tenancy by using the following 
 
 
 10.  Under the Administration hyprelink, choose your compartment ( in your case is analytics000 )  an outlook of the analytics resources will appear :
+     BE SURE TO CHOOSE THE **LoggingAnalytics for INTERNALS**  for your configuration there might be other compartments in the tenancy but only the LogginAnalytics for internals is configured for your Labs 
 
 ![](images/oci_loggin9.jpg)
 
@@ -163,5 +182,11 @@ From this point on you should follow the steps depicted on the tutorial :
 
 https://docs.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction
 
-On the next version of this Workshop you will install a managment Agent on a Linux Host, and you will activate VCN flow logs to a oracle oci bucket, then with the oci cli API you will upload them to Logging Analytics
+
+
+On the next version of this Workshop you will install a management Agent on a Linux Host, and you will activate VCN flow logs to a oracle oci bucket, then with the oci cli API you will upload them to Logging Analytics
+
+This tutorial will be regularly updated 
+
+thanks your participating to this learning experience
 
