@@ -1,3 +1,9 @@
+
+
+
+
+
+
 OCI Logging Analytics Workshop 
 
 
@@ -22,17 +28,32 @@ Do not share your credentials with other people , the utilization of the tenancy
 
 1. Log into the oractdemeasec tenancy
 
+   In a browser enter the keywords oracle cloud console as below, you will get some hyperlinks click on the first one :
+
+   
+
+   ![](../../logging-analytics-demo/images/firts_hyperlink.jpg)
+
+
+
+Then you will get this page in your browser enter the name of the tenancy in the textbox as **oractdemeasec**:
+
+![](../../logging-analytics-demo/images/second.jpg)
+
+
+Click next to proceed to the login :
+
 ![](images/oci_loggin1.jpg)
 
 2. Enter your username, and password as in the picture below:
 
-   ![](images/oci_loggin2.jpg)
+   The credentials ( user name and password will be given to you from your instructor )
+
+   ![](../../logging-analytics-demo/images/ocilogin.jpg)
 
    
 
-3. You should change you password ( for the first time login) as in the picture below:
-
-   ![](images/oci_loggin3.jpg)
+   
 
 4. On the left side of the menu click on the Identity / Compartments
    
@@ -44,9 +65,9 @@ Do not share your credentials with other people , the utilization of the tenancy
     
 6.  Then click again on the LogginAnalytics 
       ![](images/log_an_internals.jpg)
+
    
-   
-   
+
 7. In this list you will find the associated compartment for your account ( **this is the analytics000 , as your account is analytics000**)
 
 
@@ -59,7 +80,7 @@ Do not share your credentials with other people , the utilization of the tenancy
 
 
 9.  Under the Administration hyprelink, choose your compartment ( in your case is analytics000 )  an outlook of the analytics resources will appear :
- 
+
 ![](images/oci_loggin9.jpg)
 
 10. In the beginning of the labs you should see 0 entities, 0 Log Groups, 0 Uploads, and 1 saved search.
