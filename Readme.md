@@ -15,7 +15,7 @@ Prerequsites
 In the beginning of the workshop , your instructor will give you your OCI account, and password.
 You should use this information to log into the **oractdemeasec** tenancy  by using the below procedure.
 
-At this stage only LOCAL ACCOUNTS are created to allow you to access the lab environment 
+ 
 
 Do not share your credentials with other people , the utilization of the tenancy resources , are monitored, and any abnormal utilization of the tenancy resources will Trigger an invalidation of your local account.
 
