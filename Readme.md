@@ -6,7 +6,7 @@ Introduction and Scope
 
 the following document describes an introductory workshop to OCI Logging Analytics.
 
-The Workshop is based on the Oracle OCI Analytics Tutorial that you should get from [here](hhttps://docs.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction) 
+The Workshop is based on the Oracle OCI Analytics Tutorial that you should get from [here](https://docs.oracle.com/en/learn/oci_logging_analytics_tutorial_sample_logs/#introduction) 
 
 
 
