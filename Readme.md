@@ -32,13 +32,13 @@ Do not share your credentials with other people , the utilization of the tenancy
 
    
 
-   ![](../../logging-analytics-demo/images/firts_hyperlink.jpg)
+   ![](firts_hyperlink.jpg)
 
 
 
 Then you will get this page in your browser enter the name of the tenancy in the textbox as **oractdemeasec**:
 
-![](../../logging-analytics-demo/images/second.jpg)
+![](second.jpg)
 
 
 Click next to proceed to the login :
@@ -49,7 +49,7 @@ Click next to proceed to the login :
 
    The credentials ( user name and password will be given to you from your instructor )
 
-   ![](../../logging-analytics-demo/images/ocilogin.jpg)
+   ![](ocilogin.jpg)
 
    
 
