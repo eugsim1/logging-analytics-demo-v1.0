@@ -4,7 +4,7 @@
 
 
 
-OCI Logging Analytics Workshop 
+**OCI Logging Analytics Workshop** 
 
 
 
