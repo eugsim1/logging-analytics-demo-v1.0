@@ -32,7 +32,7 @@ Do not share your credentials with other people , the utilization of the tenancy
 
    
 
-   ![](firts_hyperlink.jpg)
+   ![](images/firts_hyperlink.jpg)
 
 Enter into your browser the url:
 
@@ -47,11 +47,11 @@ Then when you will get this page in your browser,  enter the name of the tenancy
 oractdemeasec
 ```
 
-![](second.jpg)
+![](images/second.jpg)
 
 Click next to proceed to the login as below  (check also that the url on the browser is pointing to login.frankfurt location):
 
-![](login_continue.jpg)
+![](images/login_continue.jpg)
 
 
 
@@ -59,9 +59,9 @@ Click next to proceed to the login as below  (check also that the url on the bro
 
    The credentials ( user name and password will be given to you from your instructor )
 
-   ![](ocilogin.jpg)
-
    
+
+   ![](images/ocilogin.jpg)
 
    
 
