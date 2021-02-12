@@ -34,9 +34,18 @@ Do not share your credentials with other people , the utilization of the tenancy
 
    ![](firts_hyperlink.jpg)
 
+Enter into your browser the url:
+
+```
+https://www.oracle.com/cloud/sign-in.html
+```
 
 
-Then you will get this page in your browser enter the name of the tenancy in the textbox as **oractdemeasec**:
+Then you will get this page in your browser enter the name of the tenancy in the textbox as 
+
+```
+oractdemeasec
+```
 
 ![](second.jpg)
 
