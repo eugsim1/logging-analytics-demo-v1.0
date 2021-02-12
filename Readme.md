@@ -49,10 +49,11 @@ oractdemeasec
 
 ![](second.jpg)
 
+Click next to proceed to the login as (check that the url on the browser is login.frankfurt):
 
-Click next to proceed to the login :
+![](login_continue.jpg)
 
-![](images/oci_loggin1.jpg)
+
 
 2. Enter your username, and password as in the picture below:
 
@@ -64,7 +65,7 @@ Click next to proceed to the login :
 
    
 
-4. On the left side of the menu click on the Identity / Compartments
+4. Once logged to the tenancy , then navigate on the left side of the menu click on the Identity / Compartments
    
 
    ![](images/oci_loggin4.jpg)
@@ -72,15 +73,19 @@ Click next to proceed to the login :
 5. Then Click again on the Workshops hyperlink
     ![](images/oci_loggin5.jpg)
     
-6.  Then click again on the LogginAnalytics 
-      ![](images/log_an_internals.jpg)
+6.  Then click again on the LogginAnalytics compartment link :
+    ![](images/log_analytics_compartment.jpg)
+    
+      
 
    
 
 7. In this list you will find the associated compartment for your account ( **this is the analytics000 , as your account is analytics000**)
 
+   Your environment has been preloaded with data you dont need to execute any other scripts.
 
-![](images/oci_loggin7.jpg)
+
+![](images/log_anlytics000_compartment.jpg)
 
 8. Click on the left side of the OCI console to the Logging Analytics  / Administration entry 
 
@@ -88,116 +93,81 @@ Click next to proceed to the login :
 
 
 
-9.  Under the Administration hyprelink, choose your compartment ( in your case is analytics000 )  an outlook of the analytics resources will appear :
+9.  Under the Administration hyperlink,, choose your compartment ( in your case is analytics000 )  an outlook of the analytics resources will appear :
 
 ![](images/oci_loggin9.jpg)
 
-10. In the beginning of the labs you should see 0 entities, 0 Log Groups, 0 Uploads, and 1 saved search.
 
-     ![](images/oci_loggin10.jpg)
+In the beginning of the labs you should see 6 entities, 1 Log Groups, 1 Uploads, and 1 saved search.
+
+In the picture below the number of upload are referred to the total number of upload of other users in the Logging Analytics compartment.
 
 
-At this stage you should start the workshop by uploading log files to your Logging Analytics Partition.
 
-To start the configuration of your Logging  Analytics Workshop click on the Cloud shell image of the oci console :
+
+
+![](images/analytics00.jpg)
+
+
+
+Check you configuration, by clicking on the Administration left entry, always on your account checkbox.
+You will see  several entities are configured according to annotation convention  **entity-user_accoun**t as  (in our case entity-analytics000):
 
  
 
-![](images/oci_loggin11.jpg)
+![](images/analytics-entities.jpg)
 
 
 
-When the cloud shell is ready you will get this section on the bottom of your screen :
-
-
-![](images/oci_loggin12.jpg)
+Click again on the Administration Tab then on the Log Group hyper link:
 
 
 
 
-Click on maximize to open a wider terminal
-
-
-![](images/oci_loggin13.jpg)
-
-
-in the cloud shell execute the command:
-
-`git clone https://github.com/eugsim1/logging-analytics-demo-v1.0.git`
-
-![](images/oci_loggin14.jpg)
-
-
-A directory is created as logging-analytics-demo-v1.0 , execute the below command from your shell :
-
-`cd logging-analytics-demo-v1.0/logging-analytics-demo/`
-
-Execute the following command : ./setup.sh "your_workshop_account",  in our case the command is :
-
-`./setup.sh analytics000`
-
-Be very careful to enter exactly your account as the first argument of the ./setup.sh command.
-
-the setup script is performing a series of initial verifications, then uploads to your account ( in our case analytics000) several logs , creates a log group, and several entities.
-
-Wait until the completion of the script.
-
-`Running demo setup script: Jan-28-2021`
-`get the compartment id for the compartment LoggingAnalytics`
-`Checking to see if compartment analytics000 under LoggingAnalytics  already exists`
-`Compartment  analytics000 Already exists`
-`Compartment analytics000 OCID=ocid1.compartment.oc1..aaaaaaaahd45l6jvxsnw5xvnfybs75aqujhmw4ygqjwnawuiay7wo2xjjbba`
-`Checking to see if group Logging-Analytics-SuperAdmins already exists`
-  `Already exists`
-  `Group OCID=ocid1.group.oc1..aaaaaaaaohxgp47nlae5ol67nd3ksdksmw33uzqnd3szmxns5hzvmuf7ntaa`
-`Checking to see if policy LoggingAnalytics already exists`
- `Logging Analytics Policy Already exists`
-  `Policy OCID=ocid1.policy.oc1..aaaaaaaaxegstfsla4tglsq3wtvycvrqwdkqvjnycojqazbvs5rtvog345vq`
-`Checking to see if tenancy already onboarded to Logging Analytics`
-  `Namespace=frnj6sfkc1ep`
-  `isOnboarded=true`
-`compartmentId  ocid1.compartment.oc1..aaaaaaaahd45l6jvxsnw5xvnfybs75aqujhmw4ygqjwnawuiay7wo2xjjbba for  setup_log group => LoggingAnalytics-LogGroup-analytics000`
-`Checking to see if log group LoggingAnalytics-LogGroup-analytics000 already exists`
-`log group LoggingAnalytics-LogGroup-analytics000 Does not exist yet, create log group`
-`Log Group LoggingAnalytics-LogGroup-analytics000 OCID=ocid1.loganalyticsloggroup.oc1.eu-frankfurt-1.amaaaaaaufnzx7iafzno3jejwrgnuwggq6kyxi6zxfdpvxx3tw523auwzo7q`
-`from update_timestamps=>Dont Create log directories`
-`from update_timestamps=>Dont change Log Record timestamps`
-`Compressing files`
-```Uploading Logs for user analytics000`
-  `Created Entity db1-analytics000 ...`
-
-`Created Entity dbhost1.oracle.com-analytics000 ....`
-
-  ``Created Entity bigip-ltm-dmz1.oracle.com-analytics000` 
-
-  ``Created Entity ...`
-
-  ``Created Entity apigw1.oracle.com-analytics000 ..``
-
-
-
-At this stage your Logging Analytics compartment is loaded with data, minimize the cloud shell.
-Then refresh the Administration view of the Logging-Analytics
-
-Remember ALWAYS to choose on the Compartment drop-down list your own compartment (analytics000 is our case)
-then you should see the following configuration :
-
-![](images/oci_loggin15.jpg)
-
-
-On the Administration left entry list click on the entities and you will see that several entities are configured according to annotation entity-user_acount as  (in our case entity-analytics000):
-
-![](images/oci_loggin16.jpg)
+![](images/analytics000-loggrous.jpg)
 
 A log group is associated for your account with the annotation LoggingAnalytics-LogGroup-analytics000
 
-![](images/oci_loggin16.jpg)
+![](images/analytics000-loggrous-1.jpg)
+
+![](images/analytics000-loggrous-2.jpg)
+
+Then on the left side, on the Logging analytics drop down list click again on the Administration entry to go back to Administration menu , then click on the storage:
+
+
+![](images/analytics000-loggrous-3.jpg)
 
 Explore the Storage the logs are taking 32 Mb
 
 ![](images/oci_loggin17.jpg)
 
 
+Then click back on the Logging Analytics drop down list ( on the top Left of the browser, and go back to the Administration menu of the Logging analytics)
+
+Explore the uploads by clicking on the Uploads link
+
+
+![]()![](images/analytics000-uploads.jpg)
+
+![](images/analytics000-uploads1.jpg)
+
+
+
+You will see the uploaded logs with which you have to run your workshop
+
+![](images/analytics000-uploads2.jpg)
+
+
+On the Administration left entry list click on the entities and you will see that several entities are configured according to annotation entity-user_account as  (in our case entity-analytics000):
+
+
+
+Check the log and then number or records by executing your preloaded Search (click on the Logging analytics/ Administration/Saved Searches) :
+
+![](images/analytis000-aved-seraches.jpg)
+![](images/analytis000-aved-seraches-1.jpg)
+
+![](images/analytis000-aved-seraches-2.jpg)
 
 From this point on you should follow the steps depicted on the tutorial :
 
