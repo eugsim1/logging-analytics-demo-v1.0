@@ -41,7 +41,7 @@ https://www.oracle.com/cloud/sign-in.html
 ```
 
 
-Then you will get this page in your browser enter the name of the tenancy in the textbox as 
+Then when you will get this page in your browser,  enter the name of the tenancy in the textbox as 
 
 ```
 oractdemeasec
@@ -49,7 +49,7 @@ oractdemeasec
 
 ![](second.jpg)
 
-Click next to proceed to the login as (check that the url on the browser is login.frankfurt):
+Click next to proceed to the login as below  (check also that the url on the browser is pointing to login.frankfurt location):
 
 ![](login_continue.jpg)
 
@@ -82,7 +82,7 @@ Click next to proceed to the login as (check that the url on the browser is logi
 
 7. In this list you will find the associated compartment for your account ( **this is the analytics000 , as your account is analytics000**)
 
-   Your environment has been preloaded with data you dont need to execute any other scripts.
+   Your environment has been preloaded with data you don't need to execute any other scripts.
 
 
 ![](images/log_anlytics000_compartment.jpg)
@@ -98,9 +98,9 @@ Click next to proceed to the login as (check that the url on the browser is logi
 ![](images/oci_loggin9.jpg)
 
 
-In the beginning of the labs you should see 6 entities, 1 Log Groups, 1 Uploads, and 1 saved search.
+In the beginning of the labs you should see 6 entities, 1 Log Group, 1 Uploads, and 1 saved search in your compartment.
 
-In the picture below the number of upload are referred to the total number of upload of other users in the Logging Analytics compartment.
+In the picture below the number of uploads are referred to the total number of uploads of other users in the Logging Analytics compartment.
 
 
 
@@ -110,8 +110,9 @@ In the picture below the number of upload are referred to the total number of up
 
 
 
-Check you configuration, by clicking on the Administration left entry, always on your account checkbox.
-You will see  several entities are configured according to annotation convention  **entity-user_accoun**t as  (in our case entity-analytics000):
+Check you configuration, by clicking on the Administration left entry (hyper link) 
+
+Several entities are configured according to annotation convention  **entity-user_accoun**t as  (in our case entity-analytics000):
 
  
 
@@ -126,7 +127,7 @@ Click again on the Administration Tab then on the Log Group hyper link:
 
 ![](images/analytics000-loggrous.jpg)
 
-A log group is associated for your account with the annotation LoggingAnalytics-LogGroup-analytics000
+A log group is associated for your account with the annotation LogGroup-analytics000
 
 ![](images/analytics000-loggrous-1.jpg)
 
@@ -137,7 +138,7 @@ Then on the left side, on the Logging analytics drop down list click again on th
 
 ![](images/analytics000-loggrous-3.jpg)
 
-Explore the Storage the logs are taking 32 Mb
+Explore the Storage the logs are taking 32 Mb ( you might see different numbers , this is due to the updated logs for this workshop)
 
 ![](images/oci_loggin17.jpg)
 
@@ -158,7 +159,7 @@ You will see the uploaded logs with which you have to run your workshop
 ![](images/analytics000-uploads2.jpg)
 
 
-On the Administration left entry list click on the entities and you will see that several entities are configured according to annotation entity-user_account as  (in our case entity-analytics000):
+
 
 
 
